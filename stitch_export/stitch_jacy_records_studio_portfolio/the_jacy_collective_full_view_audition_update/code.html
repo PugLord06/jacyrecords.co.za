@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jacy Records - The Jacy Collective</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Geist:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#57387a",
+                      "surface": "#131313",
+                      "error": "#ffb4ab",
+                      "surface-container-high": "#2a2a2a",
+                      "on-tertiary": "#402061",
+                      "on-tertiary-fixed": "#2a064b",
+                      "on-error-container": "#ffdad6",
+                      "tertiary-fixed-dim": "#dbb8ff",
+                      "inverse-surface": "#e5e2e1",
+                      "on-surface-variant": "#cfc2d5",
+                      "on-secondary-fixed": "#1a1c1c",
+                      "on-primary-fixed-variant": "#680eac",
+                      "on-primary-fixed": "#2d0050",
+                      "on-background": "#e5e2e1",
+                      "on-secondary-container": "#b4b5b5",
+                      "deep-void": "#050505",
+                      "on-primary": "#4a007f",
+                      "surface-container-highest": "#353534",
+                      "error-container": "#93000a",
+                      "tertiary-container": "#69498c",
+                      "on-tertiary-container": "#e1c3ff",
+                      "on-error": "#690005",
+                      "inverse-primary": "#8234c6",
+                      "inverse-on-surface": "#313030",
+                      "surface-container": "#201f1f",
+                      "secondary-container": "#454747",
+                      "tertiary": "#dbb8ff",
+                      "surface-container-lowest": "#0e0e0e",
+                      "primary-fixed": "#f1dbff",
+                      "surface-variant": "#353534",
+                      "outline": "#988d9e",
+                      "surface-container-low": "#1c1b1b",
+                      "secondary-fixed-dim": "#c6c6c7",
+                      "surface-tint": "#deb7ff",
+                      "primary-container": "#7b2cbf",
+                      "tertiary-fixed": "#efdbff",
+                      "outline-variant": "#4c4353",
+                      "on-secondary": "#2f3131",
+                      "secondary": "#c6c6c7",
+                      "primary-fixed-dim": "#deb7ff",
+                      "electric-purple": "#9D4EDD",
+                      "secondary-fixed": "#e2e2e2",
+                      "surface-bright": "#3a3939",
+                      "primary": "#deb7ff",
+                      "surface-dim": "#131313",
+                      "background": "#131313",
+                      "on-secondary-fixed-variant": "#454747",
+                      "muted-gray": "#606060",
+                      "on-surface": "#e5e2e1",
+                      "on-primary-container": "#e4c2ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "margin-edge": "40px",
+                      "stack-md": "32px",
+                      "stack-lg": "64px",
+                      "stack-sm": "16px",
+                      "container-max": "1440px"
+              },
+              "fontFamily": {
+                      "headline-xl": [
+                              "Anton"
+                      ],
+                      "label-sm": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-lg": [
+                              "Anton"
+                      ],
+                      "label-bold": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-xl-mobile": [
+                              "Anton"
+                      ],
+                      "body-lg": [
+                              "Geist"
+                      ],
+                      "body-md": [
+                              "Geist"
+                      ],
+                      "display-lg": [
+                              "Anton"
+                      ]
+              },
+              "fontSize": {
+                      "headline-xl": [
+                              "64px",
+                              {
+                                      "lineHeight": "110%",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "120%",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "120%",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-bold": [
+                              "14px",
+                              {
+                                      "lineHeight": "120%",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl-mobile": [
+                              "48px",
+                              {
+                                      "lineHeight": "110%",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "160%",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "160%",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "96px",
+                              {
+                                      "lineHeight": "100%",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        /* Custom Styles for interactions not fully handled by Tailwind */
+        .btn-3d {
+            box-shadow: 6px 6px 0px #240046;
+            transition: all 0.2s ease;
+        }
+        .btn-3d:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 4px 4px 0px #240046;
+        }
+        .btn-3d:active {
+            transform: translate(6px, 6px);
+            box-shadow: 0px 0px 0px #240046;
+        }
+        .glow-effect {
+            filter: drop-shadow(0 0 15px rgba(123, 44, 191, 0.6));
+        }
+        .card-3d {
+            box-shadow: 8px 8px 0px #240046;
+            transition: all 0.3s ease;
+        }
+        .card-3d:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px #240046;
+        }
+        
+        .duotone-img {
+            filter: grayscale(100%) sepia(100%) hue-rotate(250deg) saturate(300%) brightness(80%) contrast(150%);
+            transition: filter 0.3s ease;
+        }
+        .group:hover .duotone-img {
+            filter: grayscale(0%) sepia(0%) hue-rotate(0deg) saturate(100%) brightness(100%) contrast(100%);
+        }
+        
+        /* Brutalist structural lines */
+        .grid-bg {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(76, 67, 83, 0.2) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(76, 67, 83, 0.2) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-deep-void text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation -->
+<nav class="bg-background/80 backdrop-blur-md dark:bg-background/80 text-primary dark:text-primary docked full-width top-0 sticky z-50 border-b border-outline-variant shadow-[0px_4px_20px_rgba(157,78,221,0.15)] transition-all duration-300 w-full" id="navbar">
+<div class="flex justify-between items-center w-full px-margin-edge py-6 max-w-container-max mx-auto md:px-[40px] px-[20px]">
+<a class="font-headline-xl text-headline-xl text-on-background tracking-tighter md:text-[64px] text-[48px]" href="#">
+                JACY RECORDS
+            </a>
+<!-- Desktop Nav Links -->
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-headline-lg text-headline-lg tracking-tight text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-variant/20 px-4 py-2 rounded" href="#">SERVICES</a>
+<a class="font-headline-lg text-headline-lg tracking-tight text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-variant/20 px-4 py-2 rounded" href="#">PORTFOLIO</a>
+<a class="font-headline-lg text-headline-lg tracking-tight text-electric-purple font-bold border-b-2 border-electric-purple pb-1 hover:bg-surface-variant/20 px-4 py-2 rounded" href="#" style="filter: drop-shadow(0 0 10px rgba(157,78,221,0.5));">ARTISTS</a>
+<a class="font-headline-lg text-headline-lg tracking-tight text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-variant/20 px-4 py-2 rounded" href="#">CONTACT</a>
+</div>
+<!-- Trailing Action & Mobile Menu Toggle -->
+<div class="flex items-center gap-4">
+<a class="hidden md:flex items-center justify-center bg-primary-container text-deep-void font-headline-lg px-6 py-3 border border-deep-void btn-3d tracking-wide" href="#">AUDITION NOW</a>
+<button class="md:hidden text-primary focus:outline-none">
+<span class="material-symbols-outlined text-4xl">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Header Section -->
+<header class="relative w-full pt-[120px] pb-stack-lg border-b border-outline-variant grid-bg">
+<div class="max-w-container-max mx-auto px-margin-edge md:px-[40px] px-[20px] flex flex-col md:flex-row gap-gutter items-center">
+<div class="w-full md:w-1/2 z-10">
+<p class="font-label-bold text-label-bold text-electric-purple mb-4 tracking-[0.2em] uppercase">The Inner Circle</p>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-stack-sm md:text-[96px] text-[64px] uppercase leading-none" style="text-shadow: 4px 4px 0px #7B2CBF;">
+                    The Jacy<br/>Collective
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-stack-md">
+                    We are a syndicate of nocturnal creators. Artists, producers, engineers, and visionaries united under one heavily distorted roof. We don't just make tracks; we engineer the sonic future.
+                </p>
+<a class="inline-flex items-center justify-center bg-primary-container text-deep-void font-headline-lg px-8 py-4 border-2 border-primary-container hover:bg-surface hover:text-primary-container transition-all duration-300 glow-effect" href="#join">APPLY FOR AUDITION <span class="material-symbols-outlined ml-2">arrow_forward</span></a>
+</div>
+<div class="w-full md:w-1/2 relative h-[500px] flex items-center justify-center mt-stack-md md:mt-0">
+<!-- Abstract visual representation of the collective -->
+<div class="absolute w-[300px] h-[300px] bg-electric-purple/20 blur-[100px] rounded-full"></div>
+<div class="relative w-full h-full border border-outline-variant bg-surface p-4 card-3d overflow-hidden group">
+<img alt="The Collective" class="w-full h-full object-cover duotone-img" data-alt="A gritty, high-contrast black and white photograph of a diverse group of young music producers and artists standing together in a dimly lit, professional recording studio. The scene is illuminated by striking neon purple lighting cutting through the shadows, creating a cinematic, raw, brutalist aesthetic. The atmosphere is intense, nocturnal, and highly energetic, focusing on the collaborative spirit of an exclusive music collective." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6cpGncMduryDzphYo-9H91WbD2Hiz9rTLlfg3fWkH4x9wF04gXnZsrUjFaSWHkdffj040oCf6Dbawfn1QOXgTjT0swzRpQa_C0ZAtzEGYnf9dafcCA7ByBEreeDdiGvZRcfFDgZN5Mc7eD1ZqyyQAQQP7bUdbuwvqpvFQQdxuLMGeVXsp_iX4DGefbmvJxeMhi0D2ZgaiiTxOu8hvjOaYdi3dAYfFST1ZmGvkZB26Kr-yqMiFepl3"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Role Spotlight / Bento Grid -->
+<section class="py-stack-lg bg-surface relative">
+<div class="max-w-container-max mx-auto px-margin-edge md:px-[40px] px-[20px]">
+<div class="flex justify-between items-end mb-stack-md">
+<div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface uppercase md:text-[64px] text-[48px]">Role Spotlight</h2>
+<div class="h-1 w-24 bg-electric-purple mt-2"></div>
+</div>
+<p class="font-label-bold text-label-bold text-muted-gray hidden md:block">01 / ARCHITECTURE</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter auto-rows-[200px]">
+<!-- Artist (Large) -->
+<div class="md:col-span-8 row-span-2 bg-surface-container-low border border-outline-variant p-6 flex flex-col justify-end relative overflow-hidden group hover:border-primary-container transition-colors duration-300 card-3d">
+<div class="absolute inset-0 z-0">
+<img alt="Artist Role" class="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-500 duotone-img" data-alt="A dynamic, low-angle shot of an intense musical artist performing live on stage in a dark, atmospheric venue. The artist is silhouetted against blinding bursts of deep violet and stark white strobe lights. The visual style is aggressive, high-energy, and modern brutalist, capturing the raw emotion and power of a live hip-hop or electronic music performance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgCnsAM9G-TDvxhhIO618FiLUrxhccjtfxNHrP8R5Hr7DvQnW-c0_Wqg3sdF16GBEo4j6VFDvNDWVVoInRw8odBoY5C61n3jyjaIdq2bYhsLPMt4xaAfSFSIGAc2h1Rl0QnhJgoblCRL7Z-WB5qXNjUsLRt-7m4x5n1_fRq01Ls30JmEFt0zpcGndcyBrXJK2zyjhNPTAr9_SQLDBqt5BTaxJG59VBYqdwbkutKeQVP0jmthV9iPAf"/>
+</div>
+<div class="absolute top-6 right-6 z-10 bg-surface/80 backdrop-blur px-3 py-1 border border-outline-variant">
+<span class="font-label-sm text-label-sm text-primary">01</span>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-electric-purple mb-2">mic_external_on</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface uppercase mb-2">The Artist</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">The frontline communicators. Our artists are selected for their unique sonic signature and uncompromising vision. We provide the infrastructure for radical expression.</p>
+</div>
+</div>
+<!-- Producer (Square) -->
+<div class="md:col-span-4 row-span-2 bg-surface-container-highest border border-outline-variant p-6 flex flex-col relative group hover:bg-surface-variant transition-colors duration-300">
+<div class="flex-grow">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">graphic_eq</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface uppercase mb-2">The Producer</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">The architects of sound. Crafting the heavy, low-end driven instrumentals that define the aesthetic. They manipulate frequency to alter reality.</p>
+</div>
+<div class="mt-4 flex gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm px-2 py-1 border border-outline text-on-surface">BEATS</span>
+<span class="font-label-sm text-label-sm px-2 py-1 border border-outline text-on-surface">SOUND DESIGN</span>
+<span class="font-label-sm text-label-sm px-2 py-1 border border-outline text-on-surface">SYNTHESIS</span>
+</div>
+</div>
+<!-- Engineer -->
+<div class="md:col-span-4 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex items-center gap-4 group hover:border-primary-container transition-colors duration-300">
+<div class="w-16 h-16 bg-surface flex items-center justify-center border border-outline-variant group-hover:bg-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-3xl text-electric-purple">tune</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">The Engineer</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Surgical precision. Mixing and mastering the chaos into pristine, club-ready audio.</p>
+</div>
+</div>
+<!-- Director -->
+<div class="md:col-span-4 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex items-center gap-4 group hover:border-primary-container transition-colors duration-300">
+<div class="w-16 h-16 bg-surface flex items-center justify-center border border-outline-variant group-hover:bg-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-3xl text-electric-purple">movie</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">The Director</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Visual translation. Turning audio waves into cinematic, high-contrast imagery.</p>
+</div>
+</div>
+<!-- Writer / Creative -->
+<div class="md:col-span-4 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex items-center gap-4 group hover:border-primary-container transition-colors duration-300">
+<div class="w-16 h-16 bg-surface flex items-center justify-center border border-outline-variant group-hover:bg-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-3xl text-electric-purple">edit_note</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">Writer/Creative</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">The conceptual core. Lyrics, branding, and narrative development.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Member Roster / Avatars -->
+<section class="py-stack-lg bg-deep-void border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-edge md:px-[40px] px-[20px]">
+<div class="flex justify-between items-end mb-stack-md">
+<div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface uppercase md:text-[64px] text-[48px]">Current Roster</h2>
+<div class="h-1 w-24 bg-electric-purple mt-2"></div>
+</div>
+<p class="font-label-bold text-label-bold text-muted-gray hidden md:block">02 / THE SYNDICATE</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-gutter">
+<!-- Member 1 -->
+<div class="group cursor-pointer"><div class="w-full aspect-square border border-outline-variant bg-surface mb-3 overflow-hidden relative card-3d"><img alt="Coming Soon" class="w-full h-full object-cover duotone-img opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBcBxf4QOhVAiWx369FrQGRtPLJ6BNr9cjTHBUrkrkkdPEQxVuUp-MvCyYR016taR7o4-2_elzMxCgAvDTTaX3J74EMxfdpnAtm-FLBP2vePh_MsB6Fn1XSE6QP8H13RL1jjoYTRA8m250fxrjvV6wc4ped91w6LbantkoLB5MdSH9JNi-rzaEL15nWdWfRhXt3Rwa7q33Hr-9Lo84HKzZZO5tuDMQPclI63AQQPT3Pwqq24W5m3t9"/><div class="absolute inset-0 bg-gradient-to-t from-deep-void via-transparent to-transparent opacity-80"></div><div class="absolute bottom-2 right-2"><span class="font-label-sm text-label-sm bg-surface text-primary px-2 py-1 border border-primary">TBA</span></div></div><h4 class="font-headline-lg text-headline-lg text-[20px] text-on-surface uppercase group-hover:text-electric-purple transition-colors">COMING SOON...</h4></div>
+<!-- Member 2 -->
+<div class="group cursor-pointer"><div class="w-full aspect-square border border-outline-variant bg-surface mb-3 overflow-hidden relative card-3d"><img alt="Coming Soon" class="w-full h-full object-cover duotone-img opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9XUUXDP3c_i9PgkVs3jqT23sIY9UgkMRs0vDPAbzIuBD73uT3tsvROW7-NDTSsbtrQAb595o1mj6EyQbVUqPuBmNijhENU8O4ZBoPa1weT9qNjm8QdHLSwuPLFP06ZvoBpFb6YmtJx1WLUsuDpgXFYWvsG0sDnVQeh2Nmb2tMbti5eS0_YXJD7EU5lP3x_3OP1gPw648sHE9pibETGQAMFUXniOtvb4erdBElD_-iR94YO9iMJqay"/><div class="absolute inset-0 bg-gradient-to-t from-deep-void via-transparent to-transparent opacity-80"></div><div class="absolute bottom-2 right-2"><span class="font-label-sm text-label-sm bg-surface text-primary px-2 py-1 border border-primary">TBA</span></div></div><h4 class="font-headline-lg text-headline-lg text-[20px] text-on-surface uppercase group-hover:text-electric-purple transition-colors">COMING SOON...</h4></div>
+<!-- Member 3 -->
+<div class="group cursor-pointer"><div class="w-full aspect-square border border-outline-variant bg-surface mb-3 overflow-hidden relative card-3d"><img alt="Coming Soon" class="w-full h-full object-cover duotone-img opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB01llp__yJD-6SiP0F5I5Jh5gu_QK81BHBluOeL0dSlTVtavh6lhZS9-c6RkkCW8tQDXRXsBpJgzZR6TKo6RqiI0CJgJXGVExcYqgxjZvvO8uso_1lxf6REiMxnklR6t40iicQEYxRInDeL72LbsclfLyijIXY1hgsLlQao2NZzJiHBl4OP-JqU2oXr0KuGBRNcJ4nPPwXkwyOM45nyljZ7-6Qj16Pyb1AzOT2dBenSipsPDrWMhm"/><div class="absolute inset-0 bg-gradient-to-t from-deep-void via-transparent to-transparent opacity-80"></div><div class="absolute bottom-2 right-2"><span class="font-label-sm text-label-sm bg-surface text-primary px-2 py-1 border border-primary">TBA</span></div></div><h4 class="font-headline-lg text-headline-lg text-[20px] text-on-surface uppercase group-hover:text-electric-purple transition-colors">COMING SOON...</h4></div>
+<!-- Member 4 -->
+<div class="group cursor-pointer"><div class="w-full aspect-square border border-outline-variant bg-surface mb-3 overflow-hidden relative card-3d"><img alt="Coming Soon" class="w-full h-full object-cover duotone-img opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBobp6PaM7b20ucfXuUhalOBpIsfTsUyPJNVDn_wRaA_Duot24WRYzlA26ikUGFNqylwKOCJxeBmuDmP5R_EBWWhlRfD7GHiU7kXS2k2rmceIxeuO22rKzvTKV-epBk7nMLOB160Gc-zNB-XHWYiUeimYMBHIxsIlseHZ64OaJXWpHPBrwMUZcQUtuutlox6kbvcHnb4AICL60h1THuU-KVM5z_8fmKsLJAgpPRpCEt3FNm9lsVfmy4"/><div class="absolute inset-0 bg-gradient-to-t from-deep-void via-transparent to-transparent opacity-80"></div><div class="absolute bottom-2 right-2"><span class="font-label-sm text-label-sm bg-surface text-primary px-2 py-1 border border-primary">TBA</span></div></div><h4 class="font-headline-lg text-headline-lg text-[20px] text-on-surface uppercase group-hover:text-electric-purple transition-colors">COMING SOON...</h4></div>
+<!-- Open Slot -->
+<div class="group cursor-pointer opacity-50 hover:opacity-100 transition-opacity">
+<div class="w-full aspect-square border border-dashed border-outline-variant bg-surface-container-low mb-3 flex flex-col items-center justify-center relative hover:border-electric-purple transition-colors">
+<span class="material-symbols-outlined text-4xl text-outline mb-2 group-hover:text-electric-purple">add</span>
+<span class="font-label-bold text-label-bold text-outline group-hover:text-electric-purple">NEXT INTAKE</span>
+</div>
+<h4 class="font-headline-lg text-headline-lg text-[20px] text-outline uppercase">YOU?</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Member Benefits & Join CTA -->
+<section class="py-stack-lg bg-surface border-t border-outline-variant relative overflow-hidden" id="join">
+<!-- Background Grid -->
+<div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-margin-edge md:px-[40px] px-[20px] relative z-10 flex flex-col md:flex-row gap-stack-md">
+<!-- Benefits Column -->
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-xl text-headline-xl text-on-surface uppercase mb-stack-sm md:text-[64px] text-[48px]">The Arsenal</h2>
+<ul class="space-y-6">
+<li class="flex items-start gap-4 p-4 border border-outline-variant bg-surface-container-highest hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-3xl text-electric-purple group-hover:glow-effect">speaker</span>
+<div>
+<h4 class="font-headline-lg text-headline-lg text-[24px] text-on-surface uppercase">Studio Access</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">24/7 access to our state-of-the-art facility. High-end analog gear meets digital precision.</p>
+</div>
+</li>
+<li class="flex items-start gap-4 p-4 border border-outline-variant bg-surface-container-highest hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-3xl text-electric-purple group-hover:glow-effect">sync_alt</span>
+<div>
+<h4 class="font-headline-lg text-headline-lg text-[24px] text-on-surface uppercase">Cross-Collaboration</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Instant connection with our roster. Need a guitar riff? Need a mix down? The network provides.</p>
+</div>
+</li>
+<li class="flex items-start gap-4 p-4 border border-outline-variant bg-surface-container-highest hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-3xl text-electric-purple group-hover:glow-effect">trending_up</span>
+<div>
+<h4 class="font-headline-lg text-headline-lg text-[24px] text-on-surface uppercase">Distribution &amp; Push</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Leverage our established channels. Priority placement, playlist pitching, and aggressive marketing.</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- CTA / Discord Block -->
+<div class="w-full md:w-1/2 flex flex-col justify-center">
+<div class="bg-deep-void border-2 border-electric-purple p-8 relative card-3d">
+<div class="absolute top-0 right-0 p-4">
+<span class="material-symbols-outlined text-4xl text-electric-purple opacity-50">forum</span>
+</div>
+<span class="font-label-bold text-label-bold text-electric-purple tracking-widest uppercase mb-2 block">Intake 04 is imminent</span>
+<h3 class="font-display-lg text-display-lg text-on-surface uppercase leading-none mb-4 text-[64px]">Enter The<br/>Discord</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-sm">
+                        We don't accept standard resumes. Join our private Discord server. Drop your stems, share your mixes, network with the current roster. Show us what you can build in the dark.
+                    </p>
+<a class="w-full inline-flex items-center justify-center bg-electric-purple text-deep-void font-headline-lg text-[24px] px-8 py-4 btn-3d uppercase tracking-wide hover:bg-primary-container transition-colors glow-effect" href="#">
+<span class="material-symbols-outlined mr-2">tag</span>
+                        Join The Server
+                    </a>
+<div class="mt-6 flex items-center justify-center gap-2">
+<div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+<span class="font-label-sm text-label-sm text-muted-gray">42 Members currently online</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-deep-void dark:bg-deep-void text-primary dark:text-primary full-width py-stack-md border-t border-outline-variant w-full">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-edge max-w-container-max mx-auto gap-gutter md:px-[40px] px-[20px]">
+<div class="font-headline-lg text-headline-lg text-primary md:text-[32px] text-[24px]">
+                JACY RECORDS
+            </div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-label-bold text-label-bold text-muted-gray hover:text-on-surface hover:text-electric-purple transition-colors transform hover:scale-105 inline-block" href="#">INSTAGRAM</a>
+<a class="font-label-bold text-label-bold text-muted-gray hover:text-on-surface hover:text-electric-purple transition-colors transform hover:scale-105 inline-block" href="#">TIKTOK</a>
+<a class="font-label-bold text-label-bold text-muted-gray hover:text-on-surface hover:text-electric-purple transition-colors transform hover:scale-105 inline-block" href="#">YOUTUBE</a>
+<a class="font-label-bold text-label-bold text-muted-gray hover:text-on-surface hover:text-electric-purple transition-colors transform hover:scale-105 inline-block" href="#">DISCORD</a>
+<a class="font-label-bold text-label-bold text-muted-gray hover:text-on-surface hover:text-electric-purple transition-colors transform hover:scale-105 inline-block" href="#">PRIVACY</a>
+<a class="font-label-bold text-label-bold text-muted-gray hover:text-on-surface hover:text-electric-purple transition-colors transform hover:scale-105 inline-block" href="#">TERMS</a>
+</div>
+<div class="font-label-bold text-label-bold text-muted-gray text-center md:text-right">
+                © 2024 JACY RECORDS. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+<!-- Simple script for navbar scroll effect -->
+<script>
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-[0px_4px_20px_rgba(157,78,221,0.3)]');
+                nav.classList.replace('bg-background/80', 'bg-surface/95');
+            } else {
+                nav.classList.remove('shadow-[0px_4px_20px_rgba(157,78,221,0.3)]');
+                nav.classList.replace('bg-surface/95', 'bg-background/80');
+            }
+        });
+    </script>
+</body></html>

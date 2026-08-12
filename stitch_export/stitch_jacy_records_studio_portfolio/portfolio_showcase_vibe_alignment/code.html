@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio Showcase (Audition Update)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Geist:wght@100..900&amp;family=JetBrains+Mono:wght@400..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#deb7ff",
+                        "on-tertiary": "#402061",
+                        "surface-dim": "#131313",
+                        "on-background": "#e5e2e1",
+                        "error-container": "#93000a",
+                        "surface-container-low": "#1c1b1b",
+                        "background": "#131313",
+                        "surface-variant": "#353534",
+                        "on-primary-fixed-variant": "#680eac",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed-variant": "#57387a",
+                        "tertiary-fixed-dim": "#dbb8ff",
+                        "muted-gray": "#606060",
+                        "tertiary-fixed": "#efdbff",
+                        "surface-container": "#201f1f",
+                        "inverse-surface": "#e5e2e1",
+                        "primary": "#deb7ff",
+                        "primary-fixed-dim": "#deb7ff",
+                        "on-secondary": "#2f3131",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "surface": "#131313",
+                        "deep-void": "#050505",
+                        "primary-container": "#7b2cbf",
+                        "on-primary": "#4a007f",
+                        "on-surface-variant": "#cfc2d5",
+                        "outline-variant": "#4c4353",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "on-secondary-fixed-variant": "#454747",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-secondary-container": "#b4b5b5",
+                        "on-surface": "#e5e2e1",
+                        "outline": "#988d9e",
+                        "secondary-container": "#454747",
+                        "tertiary-container": "#69498c",
+                        "surface-container-highest": "#353534",
+                        "surface-bright": "#3a3939",
+                        "primary-fixed": "#f1dbff",
+                        "on-tertiary-container": "#e1c3ff",
+                        "inverse-primary": "#8234c6",
+                        "on-primary-fixed": "#2d0050",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#2a064b",
+                        "secondary": "#c6c6c7",
+                        "error": "#ffb4ab",
+                        "tertiary": "#dbb8ff",
+                        "inverse-on-surface": "#313030",
+                        "on-primary-container": "#e4c2ff",
+                        "electric-purple": "#9D4EDD",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-container-lowest": "#0e0e0e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "32px",
+                        "stack-lg": "64px",
+                        "unit": "8px",
+                        "stack-sm": "16px",
+                        "margin-edge": "40px",
+                        "container-max": "1440px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Geist"],
+                        "label-bold": ["JetBrains Mono"],
+                        "label-sm": ["JetBrains Mono"],
+                        "headline-lg": ["Anton"],
+                        "headline-xl-mobile": ["Anton"],
+                        "display-lg": ["Anton"],
+                        "headline-xl": ["Anton"],
+                        "body-lg": ["Geist"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "160%", "fontWeight": "400" }],
+                        "label-bold": ["14px", { "lineHeight": "120%", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "120%", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "120%", "fontWeight": "400" }],
+                        "headline-xl-mobile": ["48px", { "lineHeight": "110%", "fontWeight": "400" }],
+                        "display-lg": ["96px", { "lineHeight": "100%", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-xl": ["64px", { "lineHeight": "110%", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "160%", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.surface-container-lowest');
+            color: theme('colors.on-background');
+            background-image: repeating-linear-gradient(45deg, #1c1b1b 25%, transparent 25%, transparent 75%, #1c1b1b 75%, #1c1b1b), repeating-linear-gradient(45deg, #1c1b1b 25%, #0e0e0e 25%, #0e0e0e 75%, #1c1b1b 75%, #1c1b1b);
+            background-position: 0 0, 10px 10px;
+            background-size: 20px 20px;
+        }
+        
+        .brutalist-shadow {
+            box-shadow: 8px 8px 0px theme('colors.primary-container');
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .brutalist-shadow:hover {
+            transform: translate(4px, 4px);
+            box-shadow: 4px 4px 0px theme('colors.primary-container');
+        }
+
+        .neon-glow:hover {
+            filter: drop-shadow(0 0 15px rgba(123, 44, 191, 0.6));
+            border-color: theme('colors.primary-container');
+        }
+        
+        .duotone-filter {
+            filter: grayscale(100%) sepia(100%) hue-rotate(250deg) saturate(300%) contrast(150%);
+            mix-blend-mode: hard-light;
+            opacity: 0.8;
+            transition: opacity 0.3s ease, filter 0.3s ease;
+        }
+        
+        .portfolio-card:hover .duotone-filter {
+            filter: grayscale(50%) sepia(50%) hue-rotate(250deg) saturate(200%) contrast(120%);
+            opacity: 1;
+        }
+
+        .text-3d {
+            text-shadow: 4px 4px 0px #240046, 8px 8px 0px #4a007f, 12px 12px 0px #7b2cbf;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md overflow-x-hidden selection:bg-electric-purple selection:text-white">
+<!-- Top Navigation -->
+<nav class="bg-background/80 backdrop-blur-md dark:bg-background/80 docked full-width top-0 sticky z-50 border-b border-outline-variant shadow-[0px_4px_20px_rgba(157,78,221,0.15)] transition-all duration-300">
+<div class="flex justify-between items-center w-full px-margin-edge py-6 max-w-container-max mx-auto">
+<a class="font-headline-xl text-headline-xl text-on-background tracking-tighter hover:text-primary transition-colors" href="#">
+                JACY RECORDS
+            </a>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-headline-lg text-headline-lg tracking-tight text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-variant/20 px-4 py-2 rounded" href="#">SERVICES</a>
+<a class="font-headline-lg text-headline-lg tracking-tight text-primary transition-colors duration-300 hover:bg-surface-variant/20 px-4 py-2 rounded border-b-2 border-primary" href="#">PORTFOLIO</a>
+<a class="font-headline-lg text-headline-lg tracking-tight text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-variant/20 px-4 py-2 rounded" href="#">ARTISTS</a>
+<a class="font-headline-lg text-headline-lg tracking-tight text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-variant/20 px-4 py-2 rounded" href="#">CONTACT</a>
+</div>
+<button class="hidden md:block bg-primary-container text-deep-void font-headline-lg text-headline-lg px-8 py-3 rounded brutalist-shadow tracking-wider">AUDITION NOW</button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 32px;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-5 md:px-margin-edge py-stack-lg">
+<!-- Header Section -->
+<header class="mb-stack-lg text-center md:text-left pt-12">
+<h1 class="font-display-lg text-display-lg text-white uppercase mb-4 tracking-tighter text-3d">THE VAULT</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l-4 border-primary-container pl-4 bg-deep-void/50 p-4 rounded-r-lg">A curated collection of sonic landscapes, visual narratives, and industry-defining collaborations crafted in the shadows of Jacy Records.</p>
+</header>
+<!-- Filter Categories (Chips) -->
+<div class="flex flex-wrap gap-4 mb-stack-lg justify-center md:justify-start">
+<button class="px-6 py-2 border border-primary text-primary font-label-bold text-label-bold bg-surface-container hover:bg-primary-container hover:text-white transition-all duration-300 rounded-sm">ALL PROJECTS</button>
+<button class="px-6 py-2 border border-outline-variant text-on-surface-variant font-label-bold text-label-bold hover:border-primary hover:text-primary transition-all duration-300 rounded-sm bg-surface-container/50">MUSIC PRODUCTION</button>
+<button class="px-6 py-2 border border-outline-variant text-on-surface-variant font-label-bold text-label-bold hover:border-primary hover:text-primary transition-all duration-300 rounded-sm bg-surface-container/50">COMMERCIALS</button>
+<button class="px-6 py-2 border border-outline-variant text-on-surface-variant font-label-bold text-label-bold hover:border-primary hover:text-primary transition-all duration-300 rounded-sm bg-surface-container/50">ARTIST SPOTLIGHTS</button>
+</div>
+<!-- Brutalist Staggered Grid Portfolio -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter auto-rows-[minmax(300px,auto)] md:auto-rows-[450px]">
+<!-- Large Featured Project -->
+<article class="portfolio-card md:col-span-7 md:row-span-1 bg-surface-container border-2 border-outline-variant relative overflow-hidden group cursor-pointer neon-glow transition-all duration-500 rounded-lg">
+<img class="absolute inset-0 w-full h-full object-cover duotone-filter" data-alt="A cinematic, high-contrast shot inside a dark music studio. Deep shadows envelop the room, punctuated by glowing purple LEDs and sleek audio mixing boards. A silhouette of a producer sits at the console. The aesthetic is brutalist, nocturnal, and highly professional, utilizing deep blacks, vibrant purples, and sharp edges." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaeIfbs70KAwWdArF-emTP2OvdScTr2dL9PyyKO1b6NZe25-4VtdlGmpqUryDxk_gQZn3IiQyEepSUAxyA-Xa29zqR8YY4Jy9PycKM7haIoS1GAHX5XxCL_-uNfiVUseCldkfnDBm16Ruxu1dTkJKQ0N-1iwYSMxKsI71jet9XkO2tOOhKWZcUDXX9bPur6bE9USkrbDbrbVdlHei6q5pLPcO6BnoH7Bwm_vwC4b9tb6plrQ7R0CoG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-void via-deep-void/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<div class="flex gap-2 mb-3">
+<span class="px-3 py-1 border border-primary-container text-white font-label-sm text-label-sm uppercase bg-black/70 backdrop-blur-sm">Music Production</span>
+<span class="px-3 py-1 border border-primary-container text-white font-label-sm text-label-sm uppercase bg-black/70 backdrop-blur-sm">Album Mix</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-white uppercase tracking-tight mb-2 group-hover:text-primary transition-colors duration-300">NIGHT RIDER LP</h2>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 max-w-xl">Full production and mixing for the critically acclaimed synth-wave album, featuring heavy analog bass and crystalline highs.</p>
+</div>
+</article>
+<!-- Medium Project Square - Staggered -->
+<article class="portfolio-card md:col-span-5 md:row-span-1 bg-surface-container border-2 border-outline-variant relative overflow-hidden group cursor-pointer neon-glow transition-all duration-500 rounded-lg md:mt-12">
+<img class="absolute inset-0 w-full h-full object-cover duotone-filter" data-alt="A gritty, urban music video still. A lone artist stands in a concrete alleyway illuminated by a single, harsh, neon purple streetlight. The shadows are deep and impenetrable, creating a high-contrast, edgy aesthetic. The style is moody, aggressive, and distinctly nocturnal, emphasizing stark lighting and urban decay." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWwTU6hfI6PZtLz_zapFVKF_qT019l-f82ZoV2rwc7xEX9YGrvuNtAzVBQ7TDAGFK-MH9XsmI09TFvwjgS5XKiuRV-S-mrLMpqv57TfNh7b0NJTMeWLgYpXuvlsZoh54PuDpE1teGw0lCU40AVUig-R9G8eNvvXp5XiTdRFgsHUp4xDksryJF2dQBuNs74xdB2H0d-170Dk9fmMyyE3y6pC1w_ndJk2cBBbXos1BopCkX0lXwDUKhk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-void via-deep-void/50 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<span class="inline-block px-3 py-1 border border-primary-container text-white font-label-sm text-label-sm uppercase bg-black/70 backdrop-blur-sm mb-3">Music Video</span>
+<h2 class="font-headline-lg text-headline-lg text-white uppercase tracking-tight group-hover:text-primary transition-colors duration-300">URBAN DECAY</h2>
+</div>
+</article>
+<!-- Medium Project Vertical - Staggered -->
+<article class="portfolio-card md:col-span-4 md:row-span-1 bg-surface-container border-2 border-outline-variant relative overflow-hidden group cursor-pointer neon-glow transition-all duration-500 rounded-lg md:-mt-12">
+<img class="absolute inset-0 w-full h-full object-cover duotone-filter" data-alt="A sleek, high-end commercial shot of a luxury sports car bathed in dramatic, moody lighting. The car's metallic surfaces reflect deep purples and stark whites against an absolute black background. The visual style is aggressive, polished, and extremely high-contrast, fitting a premium, edgy brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOEkB6u73zJtsHaKhYj7uFIYeH7mNzbwKc7cJpcxosjnSM7F4lyKvKp9ss0a8u_u2HLpqe1Q9zTX6M4PPUHv5daQygBaD77z_qS9DyWp2YiF3cpVpUgdVfTr0Wl053nvLKGHbeWJ5g4o15o_E5VyiCQdxPHz7_426tn33wDC3B9m_g8PuvbktTOzRKDc_01mPcUAvy0RqvXW3nmQ1Bf90GfLZHguMloRs84GYXGKrBMr7pdCZuxeNR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-void via-deep-void/50 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<span class="inline-block px-3 py-1 border border-primary-container text-white font-label-sm text-label-sm uppercase bg-black/70 backdrop-blur-sm mb-3">Commercials</span>
+<h2 class="font-headline-lg text-headline-lg text-white uppercase tracking-tight group-hover:text-primary transition-colors duration-300">VELOCITY CAMPAIGN</h2>
+</div>
+</article>
+<!-- Wide Project -->
+<article class="portfolio-card md:col-span-8 md:row-span-1 bg-surface-container border-2 border-outline-variant relative overflow-hidden group cursor-pointer neon-glow transition-all duration-500 rounded-lg">
+<img class="absolute inset-0 w-full h-full object-cover duotone-filter" data-alt="A dynamic live performance shot capturing an energetic musician mid-jump on stage. The stage is entirely dark except for piercing laser lights in intense purple and stark white cutting through heavy fog. The image is high-energy, raw, and highly contrasted, focusing on the electrifying atmosphere of a live show." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyxry7qROYI3HXHaSAUUQBOM5dlfIGCVsyXrpA_t3w0gRiXxWB7znDkU3FgnfHiralbxgBkACGX4asmL5qwl2Iv8sA7qftDIHBp8qAKIG7ijXBkW5Q4yOrtgP2CSIlu2xLO-aoVLBspWA7IqZfPciC11K19KN7WH7SNukAy6b3medlRqPoE8s4jNsOsy55iRfubCPlkCG8ztH3VTTTM0zhQNK2p_YbdcBLDv8dnh6pDcG4RtrlespB" style="object-position: center 20%;"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-void via-deep-void/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<div class="flex gap-2 mb-3">
+<span class="px-3 py-1 border border-primary-container text-white font-label-sm text-label-sm uppercase bg-black/70 backdrop-blur-sm">Artist Spotlights</span>
+<span class="px-3 py-1 border border-primary-container text-white font-label-sm text-label-sm uppercase bg-black/70 backdrop-blur-sm">Live Tour</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-white uppercase tracking-tight mb-2 group-hover:text-primary transition-colors duration-300">ECHOES WORLD TOUR</h2>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 max-w-xl">Complete audio engineering and live recording strategy for a 40-city international stadium tour.</p>
+</div>
+</article>
+</div>
+<!-- CTA Section -->
+<div class="mt-stack-lg border-2 border-primary-container bg-surface-container p-stack-md md:p-stack-lg text-center relative overflow-hidden rounded-lg">
+<div class="absolute inset-0 bg-primary-container/10"></div>
+<div class="absolute top-0 left-0 w-full h-1 bg-primary-container"></div>
+<div class="relative z-10 flex flex-col items-center">
+<h3 class="font-display-lg text-headline-xl-mobile md:text-display-lg text-white uppercase mb-6 tracking-tighter">READY TO RECORD?</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl mx-auto">Bring your vision into the shadows and let us forge it into something unforgettable.</p>
+<button class="bg-primary-container text-deep-void font-headline-lg text-headline-lg px-12 py-4 brutalist-shadow rounded-sm uppercase tracking-wider flex items-center gap-2">INITIATE AUDITION <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">arrow_forward</span></button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-deep-void dark:bg-deep-void full-width py-stack-md border-t border-outline-variant mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-edge max-w-container-max mx-auto gap-gutter">
+<div class="font-headline-lg text-headline-lg text-primary tracking-tighter">
+                JACY RECORDS
+            </div>
+<div class="flex flex-wrap justify-center gap-6 md:gap-8">
+<a class="font-label-bold text-label-bold text-muted-gray hover:text-on-surface transition-colors hover:text-electric-purple uppercase" href="#">INSTAGRAM</a>
+<a class="font-label-bold text-label-bold text-muted-gray hover:text-on-surface transition-colors hover:text-electric-purple uppercase" href="#">TIKTOK</a>
+<a class="font-label-bold text-label-bold text-muted-gray hover:text-on-surface transition-colors hover:text-electric-purple uppercase" href="#">YOUTUBE</a>
+<a class="font-label-bold text-label-bold text-muted-gray hover:text-on-surface transition-colors hover:text-electric-purple uppercase" href="#">DISCORD</a>
+<a class="font-label-bold text-label-bold text-muted-gray hover:text-on-surface transition-colors hover:text-electric-purple uppercase" href="#">PRIVACY</a>
+<a class="font-label-bold text-label-bold text-muted-gray hover:text-on-surface transition-colors hover:text-electric-purple uppercase" href="#">TERMS</a>
+</div>
+<div class="font-label-bold text-label-bold text-muted-gray text-center md:text-right">
+                © 2024 JACY RECORDS. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JACY RECORDS - SERVICES</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Anton (Headlines), JetBrains Mono (Labels), Geist (Body) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Geist:wght@400;600&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#deb7ff",
+                    "on-tertiary": "#402061",
+                    "surface-dim": "#131313",
+                    "on-background": "#e5e2e1",
+                    "error-container": "#93000a",
+                    "surface-container-low": "#1c1b1b",
+                    "background": "#131313",
+                    "surface-variant": "#353534",
+                    "on-primary-fixed-variant": "#680eac",
+                    "on-error": "#690005",
+                    "on-tertiary-fixed-variant": "#57387a",
+                    "tertiary-fixed-dim": "#dbb8ff",
+                    "muted-gray": "#606060",
+                    "tertiary-fixed": "#efdbff",
+                    "surface-container": "#201f1f",
+                    "inverse-surface": "#e5e2e1",
+                    "primary": "#deb7ff",
+                    "primary-fixed-dim": "#deb7ff",
+                    "on-secondary": "#2f3131",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "surface": "#131313",
+                    "deep-void": "#050505",
+                    "primary-container": "#7b2cbf",
+                    "on-primary": "#4a007f",
+                    "on-surface-variant": "#cfc2d5",
+                    "outline-variant": "#4c4353",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "on-secondary-fixed-variant": "#454747",
+                    "secondary-fixed": "#e2e2e2",
+                    "on-secondary-container": "#b4b5b5",
+                    "on-surface": "#e5e2e1",
+                    "outline": "#988d9e",
+                    "secondary-container": "#454747",
+                    "tertiary-container": "#69498c",
+                    "surface-container-highest": "#353534",
+                    "surface-bright": "#3a3939",
+                    "primary-fixed": "#f1dbff",
+                    "on-tertiary-container": "#e1c3ff",
+                    "inverse-primary": "#8234c6",
+                    "on-primary-fixed": "#2d0050",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#2a064b",
+                    "secondary": "#c6c6c7",
+                    "error": "#ffb4ab",
+                    "tertiary": "#dbb8ff",
+                    "inverse-on-surface": "#313030",
+                    "on-primary-container": "#e4c2ff",
+                    "electric-purple": "#9D4EDD",
+                    "surface-container-high": "#2a2a2a",
+                    "surface-container-lowest": "#0e0e0e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-md": "32px",
+                    "stack-lg": "64px",
+                    "unit": "8px",
+                    "stack-sm": "16px",
+                    "margin-edge": "40px",
+                    "container-max": "1440px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-md": [
+                            "Geist"
+                    ],
+                    "label-bold": [
+                            "JetBrains Mono"
+                    ],
+                    "label-sm": [
+                            "JetBrains Mono"
+                    ],
+                    "headline-lg": [
+                            "Anton"
+                    ],
+                    "headline-xl-mobile": [
+                            "Anton"
+                    ],
+                    "display-lg": [
+                            "Anton"
+                    ],
+                    "headline-xl": [
+                            "Anton"
+                    ],
+                    "body-lg": [
+                            "Geist"
+                    ]
+            },
+            "fontSize": {
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "160%",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-bold": [
+                            "14px",
+                            {
+                                    "lineHeight": "120%",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "120%",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "120%",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-xl-mobile": [
+                            "48px",
+                            {
+                                    "lineHeight": "110%",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg": [
+                            "96px",
+                            {
+                                    "lineHeight": "100%",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-xl": [
+                            "64px",
+                            {
+                                    "lineHeight": "110%",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "160%",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        /* Base styles mapping to design guidance */
+        body {
+            background-color: #050505; /* deep-void for cinematic feel, fallback to background */
+        }
+        
+        /* 3D Button Hover Effect */
+        .btn-3d {
+            transition: all 0.15s ease-out;
+            box-shadow: 4px 4px 0px #240046;
+        }
+        .btn-3d:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px #240046;
+        }
+        .btn-3d:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px #240046;
+        }
+
+        /* Card Hover Depth */
+        .service-card {
+            transition: all 0.3s ease;
+            box-shadow: 8px 8px 0px #240046;
+        }
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 12px 12px 0px #240046;
+            border-color: #7b2cbf;
+        }
+        
+        /* Glow Effects */
+        .neon-glow:hover {
+            filter: drop-shadow(0 0 15px #7B2CBF);
+        }
+        
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col selection:bg-electric-purple selection:text-white">
+<!-- TopNavBar (Shared Component) -->
+<header class="bg-background/80 backdrop-blur-md dark:bg-background/80 text-primary dark:text-primary docked full-width top-0 sticky z-50 border-b border-outline-variant shadow-[0px_4px_20px_rgba(157,78,221,0.15)]">
+<div class="flex justify-between items-center w-full px-margin-edge py-6 max-w-container-max mx-auto md:px-margin-edge px-5">
+<!-- Brand Logo -->
+<a class="font-headline-xl text-headline-xl text-on-background tracking-tighter" href="#">
+                JACY RECORDS
+            </a>
+<!-- Navigation Links (Hidden on small mobile, handled differently in real app, assuming md:flex here for structure) -->
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:bg-surface-variant/20 hover:text-primary transition-colors duration-300 font-label-bold text-label-bold px-3 py-2" href="#">
+                    SERVICES
+                </a>
+<a class="text-on-surface-variant hover:bg-surface-variant/20 hover:text-primary transition-colors duration-300 font-label-bold text-label-bold px-3 py-2" href="#">
+                    PORTFOLIO
+                </a>
+<a class="text-on-surface-variant hover:bg-surface-variant/20 hover:text-primary transition-colors duration-300 font-label-bold text-label-bold px-3 py-2" href="#">
+                    ARTISTS
+                </a>
+<a class="text-on-surface-variant hover:bg-surface-variant/20 hover:text-primary transition-colors duration-300 font-label-bold text-label-bold px-3 py-2" href="#">
+                    CONTACT
+                </a>
+</nav>
+<!-- Trailing Action -->
+<button class="hidden md:block bg-primary-container text-deep-void font-label-bold text-label-bold px-6 py-3 border border-outline btn-3d neon-glow">AUDITION NOW</button>
+<!-- Mobile Menu Icon (Placeholder for functionality) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-5 md:px-margin-edge pt-stack-lg pb-stack-lg flex flex-col gap-stack-lg">
+<!-- Hero Section for Services -->
+<section class="flex flex-col items-start gap-stack-md relative z-10">
+<div class="inline-flex items-center gap-2 border border-outline text-primary px-4 py-2 font-label-bold text-label-bold uppercase tracking-widest bg-surface-container-low/50 backdrop-blur-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">graphic_eq</span>
+                STUDIO SERVICES
+            </div>
+<h1 class="font-display-lg text-display-lg text-on-background uppercase tracking-tighter max-w-4xl leading-[0.9]">
+                ENGINEERED <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-electric-purple to-primary">FOR IMPACT.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-4 border-l-4 border-electric-purple pl-4">
+                We provide end-to-end sonic architecture and visual identity for artists ready to dominate the digital landscape. High-fidelity production meets brutalist brand strategy.
+            </p>
+</section>
+<!-- Services Grid (Bento/Asymmetric style) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter relative z-10">
+<!-- Service 1: Music Production (Large Feature) -->
+<article class="col-span-1 md:col-span-7 bg-[#0F0F0F] border border-[#240046] service-card p-8 md:p-12 flex flex-col justify-between group overflow-hidden relative min-h-[400px]">
+<!-- Background Image Treatment -->
+<div class="absolute inset-0 z-0 opacity-20 mix-blend-luminosity group-hover:opacity-40 transition-opacity duration-500" data-alt="A cinematic, high-contrast photograph of a massive analog mixing console in a dark recording studio. The equipment is illuminated by sharp, cool purple and deep blue LED lights, creating an aggressive, high-energy nocturnal mood. The depth of field focuses on metallic knobs and sliders, evoking premium music production quality." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuApwoWzA-rJ3yrtYrlg5VW1YBODB24d_RgkOuM6NNdkVcjGHPH_fZVD5PjtjL0SXzKfT9i1x8aNNxi1cHEyX-Qt2EBHuX8JYY8u_f7XC7-74VyQfMTADDUJzl3xfAnvfk9yFQwth61VDgrpebllO8lHqvDOUu30PijSh8u2gP2dZdqM_IrweI9gRE9VCZ2aVkbXfZVKKSyngEnrbyMa3OqF836TgYLGrUEaxZma8hOME5v6BV8EbmJi')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-[#0F0F0F]/80 to-transparent z-0"></div>
+<div class="relative z-10 flex justify-between items-start mb-12">
+<div class="p-4 bg-deep-void border border-[#240046] inline-block shadow-[4px_4px_0px_#240046]">
+<span class="material-symbols-outlined text-electric-purple text-4xl" data-icon="mic" data-weight="fill" style="font-variation-settings: 'FILL' 1;">mic</span>
+</div>
+<span class="font-label-bold text-label-bold text-outline uppercase">01</span>
+</div>
+<div class="relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-on-background uppercase mb-4 group-hover:text-electric-purple transition-colors">Music Production</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-md">
+                        From raw concept to final arrangement. We architect beats and compose instrumentation tailored to your aggressive, high-energy persona.
+                    </p>
+<div class="flex gap-2 flex-wrap">
+<span class="px-3 py-1 border border-outline text-on-surface font-label-sm text-label-sm bg-deep-void/50">BEATMAKING</span>
+<span class="px-3 py-1 border border-outline text-on-surface font-label-sm text-label-sm bg-deep-void/50">COMPOSITION</span>
+<span class="px-3 py-1 border border-outline text-on-surface font-label-sm text-label-sm bg-deep-void/50">SOUND DESIGN</span>
+</div>
+</div>
+</article>
+<!-- Service 2: Mixing & Mastering (Tall Feature) -->
+<article class="col-span-1 md:col-span-5 bg-[#0F0F0F] border border-[#240046] service-card p-8 md:p-12 flex flex-col justify-between group">
+<div class="flex justify-between items-start mb-12">
+<div class="p-4 bg-deep-void border border-[#240046] inline-block shadow-[4px_4px_0px_#240046]">
+<span class="material-symbols-outlined text-electric-purple text-4xl" data-icon="tune" data-weight="fill" style="font-variation-settings: 'FILL' 1;">tune</span>
+</div>
+<span class="font-label-bold text-label-bold text-outline uppercase">02</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background uppercase mb-4 group-hover:text-electric-purple transition-colors">Mixing &amp; Mastering</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Achieve cinematic depth and competitive loudness. We refine frequencies, control dynamics, and master for digital streaming platforms with uncompromising precision.
+                    </p>
+<button class="inline-flex items-center gap-2 text-primary font-label-bold text-label-bold hover:text-white transition-colors">
+                        HEAR SAMPLES <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Service 3: Artist Branding (Standard) -->
+<article class="col-span-1 md:col-span-6 bg-[#0F0F0F] border border-[#240046] service-card p-8 md:p-12 flex flex-col justify-between group">
+<div class="flex justify-between items-start mb-12">
+<div class="p-4 bg-deep-void border border-[#240046] inline-block shadow-[4px_4px_0px_#240046]">
+<span class="material-symbols-outlined text-electric-purple text-4xl" data-icon="brush" data-weight="fill" style="font-variation-settings: 'FILL' 1;">brush</span>
+</div>
+<span class="font-label-bold text-label-bold text-outline uppercase">03</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background uppercase mb-4 group-hover:text-electric-purple transition-colors">Artist Branding</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Visual identity built for the modern edge. Logos, album art, and typography that match the intensity of your sound. Brutalist, high-contrast, unforgettable.
+                    </p>
+</div>
+</article>
+<!-- Service 4: Social Strategy (Standard) -->
+<article class="col-span-1 md:col-span-6 bg-[#0F0F0F] border border-[#240046] service-card p-8 md:p-12 flex flex-col justify-between group">
+<div class="flex justify-between items-start mb-12">
+<div class="p-4 bg-deep-void border border-[#240046] inline-block shadow-[4px_4px_0px_#240046]">
+<span class="material-symbols-outlined text-electric-purple text-4xl" data-icon="share" data-weight="fill" style="font-variation-settings: 'FILL' 1;">share</span>
+</div>
+<span class="font-label-bold text-label-bold text-outline uppercase">04</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background uppercase mb-4 group-hover:text-electric-purple transition-colors">Social Strategy</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Dominate the algorithm. We design aggressive rollout plans, short-form video concepts, and engagement tactics tailored for TikTok and Instagram.
+                    </p>
+</div>
+</article>
+</section>
+<!-- CTA Section -->
+<section class="mt-stack-md py-stack-lg border-t border-outline-variant flex flex-col items-center text-center gap-6 relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute inset-0 pointer-events-none flex justify-center items-center opacity-5">
+<span class="font-display-lg text-[200px] text-primary whitespace-nowrap">JACY RECORDS</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-background uppercase relative z-10">READY TO <br/> <span class="text-electric-purple">ELEVATE?</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg relative z-10">
+                Book a consultation to discuss your project scale, aesthetic goals, and production needs.
+            </p>
+<button class="mt-4 bg-primary-container text-deep-void font-label-bold text-label-bold px-8 py-4 border border-outline btn-3d neon-glow relative z-10 inline-flex items-center gap-2">AUDITION NOW <span class="material-symbols-outlined">arrow_outward</span></button>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-deep-void dark:bg-deep-void text-primary dark:text-primary font-label-bold text-label-bold full-width py-stack-md border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-edge max-w-container-max mx-auto gap-gutter">
+<!-- Brand Logo in Footer -->
+<div class="font-headline-lg text-headline-lg text-primary tracking-tighter">
+                JACY RECORDS
+            </div>
+<!-- Footer Links -->
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="text-muted-gray hover:text-electric-purple transition-colors duration-300" href="#">INSTAGRAM</a>
+<a class="text-muted-gray hover:text-electric-purple transition-colors duration-300" href="#">TIKTOK</a>
+<a class="text-muted-gray hover:text-electric-purple transition-colors duration-300" href="#">YOUTUBE</a>
+<a class="text-muted-gray hover:text-electric-purple transition-colors duration-300" href="#">DISCORD</a>
+<a class="text-muted-gray hover:text-electric-purple transition-colors duration-300" href="#">PRIVACY</a>
+<a class="text-muted-gray hover:text-electric-purple transition-colors duration-300" href="#">TERMS</a>
+</nav>
+<!-- Copyright -->
+<div class="text-muted-gray text-xs font-body-md mt-4 md:mt-0">
+                © 2024 JACY RECORDS. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

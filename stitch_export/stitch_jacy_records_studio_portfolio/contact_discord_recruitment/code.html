@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | Jacy Records</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Geist:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#deb7ff",
+                        "on-tertiary": "#402061",
+                        "surface-dim": "#131313",
+                        "on-background": "#e5e2e1",
+                        "error-container": "#93000a",
+                        "surface-container-low": "#1c1b1b",
+                        "background": "#131313",
+                        "surface-variant": "#353534",
+                        "on-primary-fixed-variant": "#680eac",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed-variant": "#57387a",
+                        "tertiary-fixed-dim": "#dbb8ff",
+                        "muted-gray": "#606060",
+                        "tertiary-fixed": "#efdbff",
+                        "surface-container": "#201f1f",
+                        "inverse-surface": "#e5e2e1",
+                        "primary": "#deb7ff",
+                        "primary-fixed-dim": "#deb7ff",
+                        "on-secondary": "#2f3131",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "surface": "#131313",
+                        "deep-void": "#050505",
+                        "primary-container": "#7b2cbf",
+                        "on-primary": "#4a007f",
+                        "on-surface-variant": "#cfc2d5",
+                        "outline-variant": "#4c4353",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "on-secondary-fixed-variant": "#454747",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-secondary-container": "#b4b5b5",
+                        "on-surface": "#e5e2e1",
+                        "outline": "#988d9e",
+                        "secondary-container": "#454747",
+                        "tertiary-container": "#69498c",
+                        "surface-container-highest": "#353534",
+                        "surface-bright": "#3a3939",
+                        "primary-fixed": "#f1dbff",
+                        "on-tertiary-container": "#e1c3ff",
+                        "inverse-primary": "#8234c6",
+                        "on-primary-fixed": "#2d0050",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#2a064b",
+                        "secondary": "#c6c6c7",
+                        "error": "#ffb4ab",
+                        "tertiary": "#dbb8ff",
+                        "inverse-on-surface": "#313030",
+                        "on-primary-container": "#e4c2ff",
+                        "electric-purple": "#9D4EDD",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-container-lowest": "#0e0e0e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "32px",
+                        "stack-lg": "64px",
+                        "unit": "8px",
+                        "stack-sm": "16px",
+                        "margin-edge": "40px",
+                        "container-max": "1440px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Geist"],
+                        "label-bold": ["JetBrains Mono"],
+                        "label-sm": ["JetBrains Mono"],
+                        "headline-lg": ["Anton"],
+                        "headline-xl-mobile": ["Anton"],
+                        "display-lg": ["Anton"],
+                        "headline-xl": ["Anton"],
+                        "body-lg": ["Geist"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "160%", "fontWeight": "400" }],
+                        "label-bold": ["14px", { "lineHeight": "120%", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "120%", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "120%", "fontWeight": "400" }],
+                        "headline-xl-mobile": ["48px", { "lineHeight": "110%", "fontWeight": "400" }],
+                        "display-lg": ["96px", { "lineHeight": "100%", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-xl": ["64px", { "lineHeight": "110%", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "160%", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #050505;
+            color: #e5e2e1;
+        }
+        .grid-bg {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(123, 44, 191, 0.15) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(123, 44, 191, 0.15) 1px, transparent 1px);
+        }
+        .jacy-btn {
+            background-color: #7b2cbf;
+            color: #050505;
+            box-shadow: 8px 8px 0px #240046;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+        }
+        .jacy-btn:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 6px 6px 0px #240046;
+            filter: drop-shadow(0 0 25px rgba(123, 44, 191, 0.8));
+        }
+        .jacy-btn:active {
+            transform: translate(8px, 8px);
+            box-shadow: 0px 0px 0px #240046;
+        }
+        .jacy-card {
+            background-color: rgba(15, 15, 15, 0.8);
+            border: 2px solid #240046;
+            box-shadow: 12px 12px 0px #240046;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col relative">
+<!-- TopNavBar -->
+<nav class="bg-background/80 backdrop-blur-md dark:bg-background/80 docked full-width top-0 sticky z-50 border-b border-outline-variant shadow-[0px_4px_20px_rgba(157,78,221,0.15)] flex justify-between items-center w-full px-margin-edge py-6 max-w-container-max mx-auto md:px-[40px] px-[20px]">
+<a class="font-headline-xl text-headline-xl text-on-background tracking-tighter md:font-headline-xl md:text-headline-xl font-headline-xl-mobile text-headline-xl-mobile" href="/">
+            JACY RECORDS
+        </a>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-headline-lg text-headline-lg tracking-tight text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-variant/20 px-4 py-2" href="/services">SERVICES</a>
+<a class="font-headline-lg text-headline-lg tracking-tight text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-variant/20 px-4 py-2" href="/portfolio">PORTFOLIO</a>
+<a class="font-headline-lg text-headline-lg tracking-tight text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-variant/20 px-4 py-2" href="/artists">ARTISTS</a>
+<a class="font-headline-lg text-headline-lg tracking-tight text-electric-purple font-bold border-b-2 border-electric-purple pb-1 hover:bg-surface-variant/20 px-4 py-2" href="/contact" style="filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">CONTACT</a>
+</div>
+<button class="hidden md:block jacy-btn font-headline-lg text-headline-lg px-6 py-2 uppercase tracking-wide">AUDITION NOW</button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-4xl">menu</span>
+</button>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-edge md:px-[40px] px-[20px] py-stack-lg md:py-[120px] py-[80px] flex flex-col items-center justify-center relative min-h-[75vh]">
+<div class="absolute inset-0 grid-bg opacity-50 z-0 pointer-events-none"></div>
+<div class="z-10 relative jacy-card p-stack-md md:p-stack-lg flex flex-col items-center text-center max-w-4xl w-full backdrop-blur-sm">
+<div class="mb-6 flex justify-center">
+<span class="material-symbols-outlined text-6xl text-electric-purple" style="filter: drop-shadow(0 0 15px rgba(123, 44, 191, 0.5));">forum</span>
+</div>
+<span class="font-label-bold text-label-bold text-primary tracking-[0.2em] uppercase mb-4 block">Access Granted: Next Intake Cycle</span>
+<h1 class="font-display-lg text-display-lg text-on-surface uppercase mb-6 leading-none tracking-tighter" style="text-shadow: 6px 6px 0px #7B2CBF, -2px -2px 0px #240046;">JOIN THE SYNDICATE</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl text-xl">
+        We don't accept standard resumes or transmission forms. Discord is our primary hub for auditions, raw networking, and the next artist intake cycle. Drop your stems, share your mixes, and connect directly with the roster. Show us what you can build in the dark.
+    </p>
+<a class="jacy-btn inline-flex items-center justify-center w-full md:w-auto px-12 py-6 font-headline-lg text-headline-lg text-3xl uppercase tracking-wider group" href="#">
+<span class="material-symbols-outlined mr-4 text-4xl group-hover:animate-pulse">tag</span>
+        JOIN THE SERVER
+    </a>
+<div class="mt-8 flex items-center justify-center gap-3 bg-surface-container-low border border-outline-variant px-6 py-3">
+<div class="w-3 h-3 rounded-full bg-green-500 animate-pulse" style="box-shadow: 0 0 10px #22c55e;"></div>
+<span class="font-label-sm text-label-sm text-muted-gray uppercase tracking-widest">Secure Connection Ready</span>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-deep-void dark:bg-deep-void full-width py-stack-md border-t border-outline-variant flex flex-col md:flex-row justify-between items-center w-full px-margin-edge max-w-container-max mx-auto gap-gutter md:px-[40px] px-[20px] relative z-10">
+<div class="font-headline-lg text-headline-lg text-primary text-center md:text-left">
+            JACY RECORDS
+        </div>
+<div class="flex flex-wrap justify-center gap-6 font-label-bold text-label-bold">
+<a class="text-muted-gray hover:text-electric-purple transition-colors duration-300" href="#">INSTAGRAM</a>
+<a class="text-muted-gray hover:text-electric-purple transition-colors duration-300" href="#">TIKTOK</a>
+<a class="text-muted-gray hover:text-electric-purple transition-colors duration-300" href="#">YOUTUBE</a>
+<a class="text-muted-gray hover:text-electric-purple transition-colors duration-300" href="#">DISCORD</a>
+<a class="text-muted-gray hover:text-electric-purple transition-colors duration-300" href="#">PRIVACY</a>
+<a class="text-muted-gray hover:text-electric-purple transition-colors duration-300" href="#">TERMS</a>
+</div>
+<div class="font-label-bold text-label-bold text-muted-gray text-center md:text-right">
+            © 2024 JACY RECORDS. ALL RIGHTS RESERVED.
+        </div>
+</footer>
+</body></html>
