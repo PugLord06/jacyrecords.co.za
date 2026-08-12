@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TransitionLink from "@/components/ui/TransitionLink";
 
 export default function CollectiveHeader() {
   return (
@@ -29,7 +29,7 @@ export default function CollectiveHeader() {
             engineers, and visionaries united under one heavily distorted
             roof. We don't just make tracks; we engineer the sonic future.
           </p>
-          <Link
+          <TransitionLink
             href="/contact"
             className="inline-flex items-center justify-center bg-primary-container text-deep-void font-headline-lg text-headline-lg px-8 py-4 border-2 border-primary-container hover:bg-surface hover:text-primary-container transition-all duration-300 hover:drop-shadow-[0_0_15px_rgba(123,44,191,0.6)]"
           >
@@ -40,7 +40,7 @@ export default function CollectiveHeader() {
             >
               arrow_forward
             </span>
-          </Link>
+          </TransitionLink>
         </div>
         <div className="w-full md:w-1/2 relative h-[500px] flex items-center justify-center mt-stack-md md:mt-0">
           {/* Abstract visual representation of the collective */}

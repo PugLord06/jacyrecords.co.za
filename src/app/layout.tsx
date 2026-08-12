@@ -23,6 +23,11 @@ const anton = Anton({
 export const metadata: Metadata = {
   title: "Jacy Records",
   description: "Where raw energy meets refined production.",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({

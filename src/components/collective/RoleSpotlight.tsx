@@ -66,8 +66,8 @@ export default function RoleSpotlight() {
                   The Artist
                 </h3>
               </div>
-              <p className="font-body-md text-body-md text-on-surface-variant max-w-md group-hover:text-white transition-colors">
-                For rappers, singers & recording artists. The frontline communicators selected for their unique sonic signature and uncompromising vision. We provide the infrastructure for radical expression.
+              <p className="font-body-md text-body-md text-on-surface-variant max-w-md group-hover:text-white transition-colors mt-2">
+                The frontline talent. Whether you're a recording artist, streamer, or on-camera personality, we provide the infrastructure for radical expression. Bring the raw energy; we amplify your signal.
               </p>
             </div>
           </div>
@@ -79,8 +79,8 @@ export default function RoleSpotlight() {
               <h3 className="font-headline-lg text-headline-lg text-on-surface uppercase mb-2">
                 The Producer
               </h3>
-              <p className="font-body-md text-body-md text-on-surface-variant group-hover:text-white transition-colors">
-                For beatmakers & producers. The architects of sound crafting the heavy, low-end driven instrumentals that define the aesthetic. They manipulate frequency to alter reality.
+              <p className="font-body-md text-body-md text-on-surface-variant group-hover:text-white transition-colors mt-2">
+                The architects. You build the foundations—from heavy instrumentals to high-retention content formats. You manipulate sound and structure to alter reality, setting the stage for our creators.
               </p>
             </div>
             <div className="mt-4 flex gap-2 flex-wrap opacity-50 group-hover:opacity-100 transition-opacity">
@@ -96,7 +96,7 @@ export default function RoleSpotlight() {
             </div>
             <div className="group-hover:-translate-y-1 transition-transform duration-500">
               <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">The Writer</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For songwriters & lyricists. The conceptual core shaping narrative development and lyrical branding.</p>
+              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-2 group-hover:text-white transition-colors">The conceptual core. You are the lyrical and narrative mastermind. Whether crafting hypnotic hooks, scripts, or deep lore, you weave words that cut through the noise and capture attention.</p>
             </div>
           </div>
 
@@ -107,7 +107,7 @@ export default function RoleSpotlight() {
             </div>
             <div className="group-hover:-translate-y-1 transition-transform duration-500">
               <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">The Creative</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For designers & photographers. Visual translation turning audio into cinematic, high-contrast imagery.</p>
+              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-2 group-hover:text-white transition-colors">The visual translators. Whether you're a 3D designer, photographer, or graphic artist, you define our high-contrast visual identity. You ensure our aesthetic is as lethal as our output.</p>
             </div>
           </div>
 
@@ -118,7 +118,7 @@ export default function RoleSpotlight() {
             </div>
             <div className="group-hover:-translate-y-1 transition-transform duration-500">
               <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">The Engineer</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For mixing & mastering. Surgical precision mixing chaotic stems into pristine, club-ready audio.</p>
+              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-2 group-hover:text-white transition-colors">The technical surgeons. From mixing chaotic stems into pristine audio to managing live broadcast streams, your obsessive attention to detail ensures every drop hits with maximum impact.</p>
             </div>
           </div>
 
@@ -129,7 +129,7 @@ export default function RoleSpotlight() {
             </div>
             <div className="group-hover:-translate-y-1 transition-transform duration-500">
               <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">The Director</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For visual directors. Guiding the overall artistic vision and leading high-end video production.</p>
+              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-2 group-hover:text-white transition-colors">The cinematic visionaries. You guide the overarching narrative, leading high-end video production, live streams, and documentary content. You push boundaries without compromise to create visceral media.</p>
             </div>
           </div>
           

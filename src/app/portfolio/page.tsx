@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TransitionLink from "@/components/ui/TransitionLink";
 
 export default function Portfolio() {
   return (
@@ -24,12 +24,12 @@ export default function Portfolio() {
         <p className="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl text-xl">
           We are currently curating the archive. The portfolio will feature recent projects, studio sessions, and the latest releases from the Jacy Records collective. Stay connected on our Discord for exclusive drops.
         </p>
-        <Link
+        <TransitionLink
           href="/"
           className="bg-surface-container-low text-on-surface border border-outline-variant hover:border-primary-container shadow-[8px_8px_0px_#240046] hover:shadow-[6px_6px_0px_#240046] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[8px] active:translate-y-[8px] transition-all duration-200 inline-flex items-center justify-center px-12 py-6 font-headline-lg text-headline-lg text-2xl uppercase tracking-wider"
         >
           RETURN TO BASE
-        </Link>
+        </TransitionLink>
       </div>
     </main>
   );

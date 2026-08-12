@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TransitionLink from "@/components/ui/TransitionLink";
 import DiscordOnlineCount from "@/components/ui/DiscordOnlineCount";
 
 export default function Contact() {

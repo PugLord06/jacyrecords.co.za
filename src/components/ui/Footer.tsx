@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TransitionLink from "./TransitionLink";
 
 export default function Footer() {
   return (
@@ -46,18 +47,18 @@ export default function Footer() {
         </div>
         <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-right">
           <div className="flex gap-4">
-            <Link
+            <TransitionLink
               href="/privacy"
               className="font-label-bold text-label-bold text-muted-gray hover:text-electric-purple transition-colors uppercase"
             >
               PRIVACY POLICY
-            </Link>
-            <Link
+            </TransitionLink>
+            <TransitionLink
               href="/terms"
               className="font-label-bold text-label-bold text-muted-gray hover:text-electric-purple transition-colors uppercase"
             >
               TERMS & CONDITIONS
-            </Link>
+            </TransitionLink>
           </div>
           <div className="font-label-bold text-label-bold text-muted-gray md:border-l border-outline-variant md:pl-4">
             © {new Date().getFullYear()} JACY RECORDS. ALL RIGHTS RESERVED.

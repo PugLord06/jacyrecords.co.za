@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TransitionLink from "@/components/ui/TransitionLink";
 
 export default function ServiceCTA() {
   return (
@@ -17,13 +17,12 @@ export default function ServiceCTA() {
         Book a consultation to discuss your project scale, aesthetic goals,
         and production needs.
       </p>
-      <Link
+      <TransitionLink
         href="/contact"
-        className="mt-4 bg-primary-container text-deep-void font-label-bold text-label-bold px-8 py-4 border border-outline btn-3d hover:drop-shadow-[0_0_15px_#7B2CBF] transition-all relative z-10 inline-flex items-center gap-2"
+        className="inline-block bg-primary-container text-deep-void font-headline-lg text-headline-lg px-12 py-5 rounded btn-3d tracking-widest uppercase hover:scale-105 transition-transform duration-300"
       >
-        AUDITION NOW{" "}
-        <span className="material-symbols-outlined">arrow_outward</span>
-      </Link>
+        BOOK A SESSION
+      </TransitionLink>
     </section>
   );
 }

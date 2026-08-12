@@ -1,9 +1,11 @@
 "use client";
 
-import Link from "next/link";
+import TransitionLink from "@/components/ui/TransitionLink";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+
+import Hero3D from "./Hero3D";
 
 export default function HeroSection() {
   const container = useRef<HTMLElement>(null);
@@ -42,15 +44,6 @@ export default function HeroSection() {
         },
         "-=0.5"
       );
-
-      // Pulse background elements
-      gsap.to(".hero-bg-blob", {
-        scale: 1.1,
-        duration: 2,
-        yoyo: true,
-        repeat: -1,
-        ease: "sine.inOut",
-      });
     },
     { scope: container }
   );
@@ -62,11 +55,8 @@ export default function HeroSection() {
       ref={container}
       className="relative min-h-[90vh] flex flex-col justify-center items-center px-margin-edge py-stack-lg overflow-hidden"
     >
-      {/* Background Elements */}
-      <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
-        <div className="hero-bg-blob absolute top-1/4 left-1/4 w-[50vw] h-[50vw] bg-primary-container rounded-full mix-blend-screen filter blur-[100px]"></div>
-        <div className="hero-bg-blob absolute bottom-1/4 right-1/4 w-[40vw] h-[40vw] bg-electric-purple rounded-full mix-blend-screen filter blur-[120px] opacity-50"></div>
-      </div>
+      {/* 3D Hologram Background */}
+      <Hero3D />
       
       <div className="relative z-10 text-center max-w-[1200px] mx-auto flex flex-col items-center">
         <h1
@@ -99,12 +89,12 @@ export default function HeroSection() {
             </span>
             LISTEN NOW
           </a>
-          <Link
+          <TransitionLink
             href="/collective"
             className="hero-fade-up bg-transparent border-2 border-white text-white font-headline-lg text-headline-lg px-10 py-4 rounded hover:bg-white hover:text-deep-void transition-colors btn-3d tracking-wider hover:scale-105 duration-300"
           >
             EXPLORE ROSTER
-          </Link>
+          </TransitionLink>
         </div>
       </div>
       

@@ -1,35 +1,51 @@
-import Link from "next/link";
+"use client";
+
+import TransitionLink from "@/components/ui/TransitionLink";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function CTASection() {
+  const containerRef = useRef<HTMLElement>(null);
+
+  useGSAP(
+    () => {
+      gsap.from(".cta-content", {
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top 80%",
+        },
+        y: 40,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out",
+      });
+    },
+    { scope: containerRef }
+  );
+
   return (
-    <section className="px-margin-edge py-stack-lg my-stack-lg max-w-[1440px] mx-auto bg-surface-container-high border-y border-outline-variant relative overflow-hidden">
-      {/* Background Texture */}
-      <div
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(45deg, #4c4353 25%, transparent 25%, transparent 75%, #4c4353 75%, #4c4353), repeating-linear-gradient(45deg, #4c4353 25%, #131313 25%, #131313 75%, #4c4353 75%, #4c4353)",
-          backgroundPosition: "0 0, 10px 10px",
-          backgroundSize: "20px 20px",
-        }}
-      ></div>
-      <div className="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto">
-        <h2 className="font-display-lg text-display-lg text-white mb-6 uppercase">
-          WANT TO JOIN THE COLLECTIVE?
+    <section ref={containerRef} className="py-stack-lg px-margin-edge border-t border-outline-variant bg-surface relative overflow-hidden">
+      <div className="cta-content max-w-4xl mx-auto text-center relative z-10">
+        <h2 className="font-display-lg text-display-lg text-on-surface uppercase mb-6 tracking-tighter">
+          Ready to make noise?
         </h2>
-        <p className="font-body-lg text-body-lg text-on-surface-variant mb-8">
-          Lock in your session. Our calendar fills up fast. Bring your demos,
-          stems, or just a concept. We'll handle the rest.
+        <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-2xl mx-auto">
+          Join the collective. We're always looking for visionary artists, producers, and creatives who refuse to blend in.
         </p>
-        <div className="w-full max-w-md flex flex-col gap-4">
-          <Link
-            href="/contact"
-            className="w-full block bg-primary-container text-deep-void font-headline-lg text-headline-lg px-8 py-4 btn-3d tracking-wider text-center uppercase"
-          >
-            JOIN THE DISCORD
-          </Link>
-        </div>
+        <TransitionLink
+          href="/contact"
+          className="inline-block bg-primary-container text-deep-void font-headline-lg text-headline-lg px-12 py-5 rounded btn-3d tracking-widest uppercase hover:scale-105 transition-transform duration-300"
+        >
+          SUBMIT YOUR WORK
+        </TransitionLink>
       </div>
+      
+      {/* Background Graphic */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-electric-purple/10 rounded-full blur-[100px] pointer-events-none"></div>
     </section>
   );
 }

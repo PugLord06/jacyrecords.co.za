@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TransitionLink from "@/components/ui/TransitionLink";
 
 const ROSTER_MEMBERS = [
   "https://lh3.googleusercontent.com/aida-public/AB6AXuCBcBxf4QOhVAiWx369FrQGRtPLJ6BNr9cjTHBUrkrkkdPEQxVuUp-MvCyYR016taR7o4-2_elzMxCgAvDTTaX3J74EMxfdpnAtm-FLBP2vePh_MsB6Fn1XSE6QP8H13RL1jjoYTRA8m250fxrjvV6wc4ped91w6LbantkoLB5MdSH9JNi-rzaEL15nWdWfRhXt3Rwa7q33Hr-9Lo84HKzZZO5tuDMQPclI63AQQPT3Pwqq24W5m3t9",
@@ -46,7 +46,7 @@ export default function RosterGrid() {
 
           {/* Open Slot */}
           <div className="group cursor-pointer opacity-50 hover:opacity-100 transition-opacity">
-            <Link href="/contact">
+            <TransitionLink href="/contact">
               <div className="w-full aspect-square border border-dashed border-outline-variant bg-surface-container-low mb-3 flex flex-col items-center justify-center relative hover:border-electric-purple transition-colors">
                 <span
                   className="material-symbols-outlined text-4xl text-outline mb-2 group-hover:text-electric-purple"
@@ -61,7 +61,7 @@ export default function RosterGrid() {
               <h4 className="font-headline-lg text-headline-lg text-[20px] text-outline uppercase">
                 YOU?
               </h4>
-            </Link>
+            </TransitionLink>
           </div>
         </div>
       </div>

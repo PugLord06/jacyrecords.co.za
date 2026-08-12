@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import TransitionLink from "@/components/ui/TransitionLink";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -46,8 +46,7 @@ export default function PortfolioCTA() {
           Bring your vision into the shadows and let us forge it into
           something unforgettable.
         </p>
-        <Link
-          ref={btnRef}
+        <TransitionLink
           href="/contact"
           className="bg-primary-container text-deep-void font-headline-lg text-headline-lg px-12 py-4 shadow-[8px_8px_0px_#7b2cbf] transition-colors rounded-sm uppercase tracking-wider flex items-center gap-2"
         >
@@ -58,7 +57,7 @@ export default function PortfolioCTA() {
           >
             arrow_forward
           </span>
-        </Link>
+        </TransitionLink>
       </div>
     </div>
   );
