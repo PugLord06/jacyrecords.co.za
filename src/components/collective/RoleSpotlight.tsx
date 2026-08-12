@@ -4,6 +4,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Mic2, AudioWaveform, PenLine, Paintbrush, SlidersHorizontal, Clapperboard } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -58,16 +59,13 @@ export default function RoleSpotlight() {
             <div className="absolute top-6 right-6 z-10 bg-surface/80 backdrop-blur px-3 py-1 border border-outline-variant">
               <span className="font-label-sm text-label-sm text-primary">01</span>
             </div>
-            <div className="relative z-10">
-              <span
-                className="material-symbols-outlined text-4xl text-electric-purple mb-2 block"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                mic_external_on
-              </span>
-              <h3 className="font-headline-lg text-headline-lg text-on-surface uppercase mb-2">
-                The Artist
-              </h3>
+            <div className="relative z-10 group-hover:-translate-y-2 transition-transform duration-500">
+              <div className="flex items-center gap-3 mb-2">
+                <Mic2 className="text-electric-purple w-8 h-8 group-hover:animate-pulse" />
+                <h3 className="font-headline-lg text-headline-lg text-on-surface uppercase m-0">
+                  The Artist
+                </h3>
+              </div>
               <p className="font-body-md text-body-md text-on-surface-variant max-w-md group-hover:text-white transition-colors">
                 For rappers, singers & recording artists.
               </p>
@@ -76,13 +74,8 @@ export default function RoleSpotlight() {
 
           {/* 2. Producer */}
           <div className="role-card md:col-span-4 row-span-2 bg-surface-container-highest border border-outline-variant p-6 flex flex-col relative group hover:bg-surface-variant transition-colors duration-300">
-            <div className="flex-grow">
-              <span
-                className="material-symbols-outlined text-4xl text-primary mb-4 block"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                graphic_eq
-              </span>
+            <div className="flex-grow group-hover:-translate-y-2 transition-transform duration-500">
+              <AudioWaveform className="text-primary w-10 h-10 mb-4 group-hover:animate-pulse" />
               <h3 className="font-headline-lg text-headline-lg text-on-surface uppercase mb-2">
                 The Producer
               </h3>
@@ -97,67 +90,46 @@ export default function RoleSpotlight() {
           </div>
 
           {/* 3. Writer */}
-          <div className="role-card md:col-span-4 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex items-center gap-4 group hover:border-primary-container transition-colors duration-300">
+          <div className="role-card md:col-span-6 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex items-center gap-4 group hover:border-primary-container transition-colors duration-300">
             <div className="w-16 h-16 shrink-0 bg-surface flex items-center justify-center border border-outline-variant group-hover:bg-primary-container/20 transition-colors">
-              <span className="material-symbols-outlined text-3xl text-electric-purple" style={{ fontVariationSettings: "'FILL' 1" }}>
-                edit_note
-              </span>
+              <PenLine className="text-electric-purple w-8 h-8 group-hover:animate-pulse" />
             </div>
-            <div>
+            <div className="group-hover:-translate-y-1 transition-transform duration-500">
               <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">The Writer</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1">For songwriters, lyricists & topliners.</p>
+              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For songwriters, lyricists & topliners.</p>
             </div>
           </div>
 
           {/* 4. Creative */}
-          <div className="role-card md:col-span-4 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex items-center gap-4 group hover:border-primary-container transition-colors duration-300">
+          <div className="role-card md:col-span-6 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex items-center gap-4 group hover:border-primary-container transition-colors duration-300">
             <div className="w-16 h-16 shrink-0 bg-surface flex items-center justify-center border border-outline-variant group-hover:bg-primary-container/20 transition-colors">
-              <span className="material-symbols-outlined text-3xl text-electric-purple" style={{ fontVariationSettings: "'FILL' 1" }}>
-                palette
-              </span>
+              <Paintbrush className="text-electric-purple w-8 h-8 group-hover:animate-pulse" />
             </div>
-            <div>
+            <div className="group-hover:-translate-y-1 transition-transform duration-500">
               <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">The Creative</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1">For designers, editors & photographers.</p>
+              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For designers, editors & photographers.</p>
             </div>
           </div>
 
           {/* 5. Engineer */}
-          <div className="role-card md:col-span-4 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex items-center gap-4 group hover:border-primary-container transition-colors duration-300">
+          <div className="role-card md:col-span-6 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex items-center gap-4 group hover:border-primary-container transition-colors duration-300">
             <div className="w-16 h-16 shrink-0 bg-surface flex items-center justify-center border border-outline-variant group-hover:bg-primary-container/20 transition-colors">
-              <span className="material-symbols-outlined text-3xl text-electric-purple" style={{ fontVariationSettings: "'FILL' 1" }}>
-                tune
-              </span>
+              <SlidersHorizontal className="text-electric-purple w-8 h-8 group-hover:animate-pulse" />
             </div>
-            <div>
+            <div className="group-hover:-translate-y-1 transition-transform duration-500">
               <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">The Engineer</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1">For mixing, mastering & audio engineers.</p>
+              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For mixing, mastering & audio engineers.</p>
             </div>
           </div>
 
           {/* 6. Director */}
           <div className="role-card md:col-span-6 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex items-center gap-4 group hover:border-primary-container transition-colors duration-300">
             <div className="w-16 h-16 shrink-0 bg-surface flex items-center justify-center border border-outline-variant group-hover:bg-primary-container/20 transition-colors">
-              <span className="material-symbols-outlined text-3xl text-electric-purple" style={{ fontVariationSettings: "'FILL' 1" }}>
-                movie
-              </span>
+              <Clapperboard className="text-electric-purple w-8 h-8 group-hover:animate-pulse" />
             </div>
-            <div>
+            <div className="group-hover:-translate-y-1 transition-transform duration-500">
               <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">The Director</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1">For visual direction & creative projects.</p>
-            </div>
-          </div>
-
-          {/* 7. Records Member */}
-          <div className="role-card md:col-span-6 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex items-center gap-4 group hover:border-primary-container transition-colors duration-300">
-            <div className="w-16 h-16 shrink-0 bg-surface flex items-center justify-center border border-outline-variant group-hover:bg-primary-container/20 transition-colors">
-              <span className="material-symbols-outlined text-3xl text-electric-purple" style={{ fontVariationSettings: "'FILL' 1" }}>
-                stars
-              </span>
-            </div>
-            <div>
-              <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">Records Member</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1">The overall role everyone accepted into the collective gets.</p>
+              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For visual direction & creative projects.</p>
             </div>
           </div>
           
