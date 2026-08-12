@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DiscordOnlineCount from "@/components/ui/DiscordOnlineCount";
 
 export default function Contact() {
   return (
@@ -37,7 +38,9 @@ export default function Contact() {
         </p>
         <a
           className="bg-primary-container text-deep-void shadow-[8px_8px_0px_#240046] hover:shadow-[6px_6px_0px_#240046] hover:translate-x-[2px] hover:translate-y-[2px] hover:drop-shadow-[0_0_25px_rgba(123,44,191,0.8)] active:shadow-none active:translate-x-[8px] active:translate-y-[8px] transition-all duration-200 inline-flex items-center justify-center w-full md:w-auto px-12 py-6 font-headline-lg text-headline-lg text-3xl uppercase tracking-wider group"
-          href="https://discord.gg/example"
+          href="https://discord.gg/DjkyCQYcWj"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <span className="material-symbols-outlined mr-4 text-4xl group-hover:animate-pulse">
             tag
@@ -45,15 +48,10 @@ export default function Contact() {
           JOIN THE SERVER
         </a>
         <div className="mt-8 flex items-center justify-center gap-3 bg-surface-container-low border border-outline-variant px-6 py-3">
-          <div
-            className="w-3 h-3 rounded-full bg-green-500 animate-pulse"
-            style={{ boxShadow: "0 0 10px #22c55e" }}
-          ></div>
-          <span className="font-label-sm text-label-sm text-muted-gray uppercase tracking-widest">
-            Secure Connection Ready
-          </span>
+          <DiscordOnlineCount inviteCode="DjkyCQYcWj" />
         </div>
       </div>
     </main>
   );
 }
+

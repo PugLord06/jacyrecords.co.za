@@ -67,7 +67,7 @@ export default function RoleSpotlight() {
                 </h3>
               </div>
               <p className="font-body-md text-body-md text-on-surface-variant max-w-md group-hover:text-white transition-colors">
-                For rappers, singers & recording artists.
+                For rappers, singers & recording artists. The frontline communicators selected for their unique sonic signature and uncompromising vision. We provide the infrastructure for radical expression.
               </p>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function RoleSpotlight() {
                 The Producer
               </h3>
               <p className="font-body-md text-body-md text-on-surface-variant group-hover:text-white transition-colors">
-                For beatmakers & producers.
+                For beatmakers & producers. The architects of sound crafting the heavy, low-end driven instrumentals that define the aesthetic. They manipulate frequency to alter reality.
               </p>
             </div>
             <div className="mt-4 flex gap-2 flex-wrap opacity-50 group-hover:opacity-100 transition-opacity">
@@ -96,7 +96,7 @@ export default function RoleSpotlight() {
             </div>
             <div className="group-hover:-translate-y-1 transition-transform duration-500">
               <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">The Writer</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For songwriters, lyricists & topliners.</p>
+              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For songwriters & lyricists. The conceptual core shaping narrative development and lyrical branding.</p>
             </div>
           </div>
 
@@ -107,7 +107,7 @@ export default function RoleSpotlight() {
             </div>
             <div className="group-hover:-translate-y-1 transition-transform duration-500">
               <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">The Creative</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For designers, editors & photographers.</p>
+              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For designers & photographers. Visual translation turning audio into cinematic, high-contrast imagery.</p>
             </div>
           </div>
 
@@ -118,7 +118,7 @@ export default function RoleSpotlight() {
             </div>
             <div className="group-hover:-translate-y-1 transition-transform duration-500">
               <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">The Engineer</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For mixing, mastering & audio engineers.</p>
+              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For mixing & mastering. Surgical precision mixing chaotic stems into pristine, club-ready audio.</p>
             </div>
           </div>
 
@@ -129,7 +129,7 @@ export default function RoleSpotlight() {
             </div>
             <div className="group-hover:-translate-y-1 transition-transform duration-500">
               <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">The Director</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For visual direction & creative projects.</p>
+              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1 group-hover:text-white transition-colors">For visual directors. Guiding the overall artistic vision and leading high-end video production.</p>
             </div>
           </div>
           

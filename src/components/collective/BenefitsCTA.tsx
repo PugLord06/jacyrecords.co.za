@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import DiscordOnlineCount from "@/components/ui/DiscordOnlineCount";
 export default function BenefitsCTA() {
   return (
     <section className="py-stack-lg bg-surface border-t border-outline-variant relative overflow-hidden" id="join">
@@ -98,7 +98,9 @@ export default function BenefitsCTA() {
               current roster. Show us what you can build in the dark.
             </p>
             <Link
-              href="/contact"
+              href="https://discord.gg/DjkyCQYcWj"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full inline-flex items-center justify-center bg-electric-purple text-deep-void font-headline-lg text-[24px] px-8 py-4 shadow-[6px_6px_0px_#240046] hover:shadow-[4px_4px_0px_#240046] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[6px] active:translate-y-[6px] transition-all uppercase tracking-wide hover:bg-primary-container hover:drop-shadow-[0_0_15px_rgba(123,44,191,0.6)]"
             >
               <span
@@ -110,10 +112,7 @@ export default function BenefitsCTA() {
               Join The Server
             </Link>
             <div className="mt-6 flex items-center justify-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-              <span className="font-label-sm text-label-sm text-muted-gray">
-                42 Members currently online
-              </span>
+              <DiscordOnlineCount inviteCode="DjkyCQYcWj" />
             </div>
           </div>
         </div>
