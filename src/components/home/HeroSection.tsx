@@ -1,7 +1,7 @@
 "use client";
 
 import TransitionLink from "@/components/ui/TransitionLink";
-import { useRef, Suspense } from "react";
+import { useRef, Suspense, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -10,6 +10,7 @@ import Hero3D from "./Hero3D";
 export default function HeroSection() {
   const container = useRef<HTMLElement>(null);
   const headlineRef = useRef<HTMLHeadingElement>(null);
+  const [show3D, setShow3D] = useState(true);
 
   useGSAP(
     () => {
@@ -56,9 +57,11 @@ export default function HeroSection() {
       className="relative min-h-[90vh] flex flex-col justify-center items-center px-margin-edge py-stack-lg overflow-hidden"
     >
       {/* 3D Hologram Background - Wrapped in Suspense so it doesn't block the page transition blinds from rendering */}
-      <Suspense fallback={null}>
-        <Hero3D />
-      </Suspense>
+      {show3D && (
+        <Suspense fallback={null}>
+          <Hero3D />
+        </Suspense>
+      )}
       
       <div className="relative z-10 text-center max-w-[1200px] mx-auto flex flex-col items-center">
         <h1
@@ -101,11 +104,22 @@ export default function HeroSection() {
       </div>
       
       {/* Floating Elements / Visual Interest */}
-      <div className="hero-fade-up absolute bottom-10 w-full flex justify-center animate-bounce z-10">
+      <div className="hero-fade-up absolute bottom-10 w-full flex justify-center animate-bounce z-10 pointer-events-none">
         <span className="material-symbols-outlined text-primary text-4xl">
           keyboard_arrow_down
         </span>
       </div>
+
+      {/* 3D Toggle for Performance/OBS */}
+      <button
+        onClick={() => setShow3D(!show3D)}
+        className="absolute bottom-6 right-6 z-20 flex items-center gap-2 bg-surface-variant/40 hover:bg-surface-variant/80 text-on-surface-variant text-sm px-3 py-1 rounded transition-colors backdrop-blur-sm border border-outline-variant/30"
+      >
+        <span className="material-symbols-outlined" style={{ fontSize: "16px" }}>
+          {show3D ? "visibility" : "visibility_off"}
+        </span>
+        3D {show3D ? "ON" : "OFF"}
+      </button>
     </section>
   );
 }
