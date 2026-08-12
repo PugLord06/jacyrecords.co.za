@@ -1,7 +1,7 @@
 "use client";
 
 import TransitionLink from "@/components/ui/TransitionLink";
-import { useRef } from "react";
+import { useRef, Suspense } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -55,8 +55,10 @@ export default function HeroSection() {
       ref={container}
       className="relative min-h-[90vh] flex flex-col justify-center items-center px-margin-edge py-stack-lg overflow-hidden"
     >
-      {/* 3D Hologram Background */}
-      <Hero3D />
+      {/* 3D Hologram Background - Wrapped in Suspense so it doesn't block the page transition blinds from rendering */}
+      <Suspense fallback={null}>
+        <Hero3D />
+      </Suspense>
       
       <div className="relative z-10 text-center max-w-[1200px] mx-auto flex flex-col items-center">
         <h1
