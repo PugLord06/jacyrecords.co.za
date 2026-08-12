@@ -47,7 +47,7 @@ export default function FounderSection() {
             <div className="relative border-2 border-outline-variant shadow-[12px_12px_0px_#240046] overflow-hidden group">
               <div className="absolute inset-0 bg-electric-purple/20 mix-blend-overlay z-10 pointer-events-none transition-opacity duration-500 group-hover:opacity-0"></div>
               <img 
-                src="/jacy.webp" 
+                src="/jacy.png" 
                 alt="Jacy Anthony - Founder" 
                 className="w-full h-auto object-cover aspect-[4/5] grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:contrast-100 group-hover:scale-105 transition-all duration-700 transform-gpu"
               />
