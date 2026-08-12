@@ -85,7 +85,12 @@ export default function HeroSection() {
           and demand attention.
         </p>
         <div className="flex gap-4 flex-wrap justify-center">
-          <button className="hero-fade-up bg-primary-container text-deep-void font-headline-lg text-headline-lg px-10 py-4 rounded btn-3d tracking-wider flex items-center gap-2 hover:scale-105 transition-transform duration-300">
+          <a 
+            href="https://www.youtube.com/channel/UCXqvTuRf-kD5WKEMfJl4cQQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hero-fade-up bg-primary-container text-deep-void font-headline-lg text-headline-lg px-10 py-4 rounded btn-3d tracking-wider flex items-center gap-2 hover:scale-105 transition-transform duration-300"
+          >
             <span
               className="material-symbols-outlined"
               style={{ fontVariationSettings: "'FILL' 1" }}
@@ -93,7 +98,7 @@ export default function HeroSection() {
               play_arrow
             </span>
             LISTEN NOW
-          </button>
+          </a>
           <Link
             href="/collective"
             className="hero-fade-up bg-transparent border-2 border-white text-white font-headline-lg text-headline-lg px-10 py-4 rounded hover:bg-white hover:text-deep-void transition-colors btn-3d tracking-wider hover:scale-105 duration-300"
