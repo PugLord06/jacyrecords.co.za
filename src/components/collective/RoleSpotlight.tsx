@@ -13,8 +13,9 @@ export default function RoleSpotlight() {
             01 / ARCHITECTURE
           </p>
         </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter auto-rows-[200px]">
-          {/* Artist (Large) */}
+          {/* 1. Artist */}
           <div className="md:col-span-8 row-span-2 bg-surface-container-low border border-outline-variant p-6 flex flex-col justify-end relative overflow-hidden group hover:border-primary-container transition-colors duration-300 shadow-[8px_8px_0px_#240046] hover:shadow-[12px_12px_0px_#240046] hover:-translate-x-1 hover:-translate-y-1">
             <div className="absolute inset-0 z-0">
               <img
@@ -27,116 +28,95 @@ export default function RoleSpotlight() {
               <span className="font-label-sm text-label-sm text-primary">01</span>
             </div>
             <div className="relative z-10">
-              <span
-                className="material-symbols-outlined text-4xl text-electric-purple mb-2"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                mic_external_on
-              </span>
-              <h3 className="font-headline-lg text-headline-lg text-on-surface uppercase mb-2">
-                The Artist
+              <h3 className="font-headline-lg text-headline-lg text-on-surface uppercase mb-2 flex items-center gap-2">
+                <span>🎤</span> ARTIST
               </h3>
               <p className="font-body-md text-body-md text-on-surface-variant max-w-md">
-                The frontline communicators. Our artists are selected for
-                their unique sonic signature and uncompromising vision. We
-                provide the infrastructure for radical expression.
+                For rappers, singers & recording artists.
               </p>
             </div>
           </div>
 
-          {/* Producer (Square) */}
+          {/* 2. Producer */}
           <div className="md:col-span-4 row-span-2 bg-surface-container-highest border border-outline-variant p-6 flex flex-col relative group hover:bg-surface-variant transition-colors duration-300">
-            <div className="flex-grow">
-              <span
-                className="material-symbols-outlined text-4xl text-primary mb-4"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                graphic_eq
-              </span>
-              <h3 className="font-headline-lg text-headline-lg text-on-surface uppercase mb-2">
-                The Producer
+            <div className="absolute top-6 right-6 z-10 bg-surface/80 backdrop-blur px-3 py-1 border border-outline-variant">
+              <span className="font-label-sm text-label-sm text-primary">02</span>
+            </div>
+            <div className="flex-grow flex flex-col justify-end pb-4">
+              <h3 className="font-headline-lg text-headline-lg text-on-surface uppercase mb-2 flex items-center gap-2">
+                <span>🎹</span> PRODUCER
               </h3>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                The architects of sound. Crafting the heavy, low-end driven
-                instrumentals that define the aesthetic. They manipulate
-                frequency to alter reality.
-              </p>
-            </div>
-            <div className="mt-4 flex gap-2 flex-wrap">
-              <span className="font-label-sm text-label-sm px-2 py-1 border border-outline text-on-surface">
-                BEATS
-              </span>
-              <span className="font-label-sm text-label-sm px-2 py-1 border border-outline text-on-surface">
-                SOUND DESIGN
-              </span>
-              <span className="font-label-sm text-label-sm px-2 py-1 border border-outline text-on-surface">
-                SYNTHESIS
-              </span>
-            </div>
-          </div>
-
-          {/* Engineer */}
-          <div className="md:col-span-4 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex items-center gap-4 group hover:border-primary-container transition-colors duration-300">
-            <div className="w-16 h-16 bg-surface flex items-center justify-center border border-outline-variant group-hover:bg-primary-container/20 transition-colors">
-              <span
-                className="material-symbols-outlined text-3xl text-electric-purple"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                tune
-              </span>
-            </div>
-            <div>
-              <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">
-                The Engineer
-              </h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1">
-                Surgical precision. Mixing and mastering the chaos into
-                pristine, club-ready audio.
+                For beatmakers & producers.
               </p>
             </div>
           </div>
 
-          {/* Director */}
-          <div className="md:col-span-4 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex items-center gap-4 group hover:border-primary-container transition-colors duration-300">
-            <div className="w-16 h-16 bg-surface flex items-center justify-center border border-outline-variant group-hover:bg-primary-container/20 transition-colors">
-              <span
-                className="material-symbols-outlined text-3xl text-electric-purple"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                movie
-              </span>
+          {/* 3. Writer */}
+          <div className="md:col-span-4 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex flex-col justify-center group hover:border-primary-container transition-colors duration-300 relative">
+             <div className="absolute top-4 right-4 z-10">
+              <span className="font-label-sm text-label-sm text-muted-gray">03</span>
             </div>
-            <div>
-              <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">
-                The Director
-              </h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1">
-                Visual translation. Turning audio waves into cinematic,
-                high-contrast imagery.
-              </p>
+            <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase flex items-center gap-2">
+              <span>✍️</span> WRITER
+            </h3>
+            <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1">
+              For songwriters, lyricists & topliners.
+            </p>
+          </div>
+          
+          {/* 4. Creative */}
+          <div className="md:col-span-4 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex flex-col justify-center group hover:border-primary-container transition-colors duration-300 relative">
+             <div className="absolute top-4 right-4 z-10">
+              <span className="font-label-sm text-label-sm text-muted-gray">04</span>
             </div>
+            <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase flex items-center gap-2">
+              <span>🎨</span> CREATIVE
+            </h3>
+            <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1">
+              For designers, editors, photographers & other creatives.
+            </p>
           </div>
 
-          {/* Writer / Creative */}
-          <div className="md:col-span-4 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex items-center gap-4 group hover:border-primary-container transition-colors duration-300">
-            <div className="w-16 h-16 bg-surface flex items-center justify-center border border-outline-variant group-hover:bg-primary-container/20 transition-colors">
-              <span
-                className="material-symbols-outlined text-3xl text-electric-purple"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                edit_note
-              </span>
+          {/* 5. Engineer */}
+          <div className="md:col-span-4 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex flex-col justify-center group hover:border-primary-container transition-colors duration-300 relative">
+             <div className="absolute top-4 right-4 z-10">
+              <span className="font-label-sm text-label-sm text-muted-gray">05</span>
             </div>
-            <div>
-              <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase">
-                Writer/Creative
-              </h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1">
-                The conceptual core. Lyrics, branding, and narrative
-                development.
-              </p>
-            </div>
+            <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase flex items-center gap-2">
+              <span>🎧</span> ENGINEER
+            </h3>
+            <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1">
+              For mixing, mastering & audio engineers.
+            </p>
           </div>
+
+          {/* 6. Director */}
+          <div className="md:col-span-6 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex flex-col justify-center group hover:border-primary-container transition-colors duration-300 relative">
+             <div className="absolute top-4 right-4 z-10">
+              <span className="font-label-sm text-label-sm text-muted-gray">06</span>
+            </div>
+            <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase flex items-center gap-2">
+              <span>🎬</span> DIRECTOR
+            </h3>
+            <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1">
+              For people involved in videos, visual direction & creative projects.
+            </p>
+          </div>
+
+          {/* 7. Records Member */}
+          <div className="md:col-span-6 row-span-1 bg-surface-container-low border border-outline-variant p-6 flex flex-col justify-center group hover:border-primary-container transition-colors duration-300 relative">
+             <div className="absolute top-4 right-4 z-10">
+              <span className="font-label-sm text-label-sm text-muted-gray">07</span>
+            </div>
+            <h3 className="font-headline-lg text-headline-lg text-on-surface text-[24px] uppercase flex items-center gap-2">
+              <span className="text-electric-purple drop-shadow-[0_0_8px_rgba(123,44,191,0.8)]">⭐</span> RECORDS MEMBER
+            </h3>
+            <p className="font-body-md text-body-md text-on-surface-variant text-sm mt-1">
+              The overall role everyone accepted into the collective gets.
+            </p>
+          </div>
+          
         </div>
       </div>
     </section>
