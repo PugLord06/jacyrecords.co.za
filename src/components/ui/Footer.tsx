@@ -10,39 +10,38 @@ export default function Footer() {
         <div className="flex flex-wrap justify-center gap-6 md:gap-8">
           <Link
             className="font-label-bold text-label-bold text-muted-gray hover:text-electric-purple transition-colors uppercase"
-            href="#"
+            href="https://twitch.tv/itsjacyanthony"
+            target="_blank"
           >
-            INSTAGRAM
+            TWITCH 🟣
           </Link>
           <Link
             className="font-label-bold text-label-bold text-muted-gray hover:text-electric-purple transition-colors uppercase"
-            href="#"
+            href="https://tiktok.com/@itsjacyanthony"
+            target="_blank"
           >
             TIKTOK
           </Link>
           <Link
             className="font-label-bold text-label-bold text-muted-gray hover:text-electric-purple transition-colors uppercase"
-            href="#"
+            href="https://www.youtube.com/channel/UCXqvTuRf-kD5WKEMfJl4cQQ"
+            target="_blank"
           >
             YOUTUBE
           </Link>
           <Link
             className="font-label-bold text-label-bold text-muted-gray hover:text-electric-purple transition-colors uppercase"
-            href="#"
+            href="https://discord.gg/DjkyCQYcWj"
+            target="_blank"
           >
             DISCORD
           </Link>
           <Link
             className="font-label-bold text-label-bold text-muted-gray hover:text-electric-purple transition-colors uppercase"
-            href="#"
+            href="https://www.instagram.com/itsjacyanthony/"
+            target="_blank"
           >
-            PRIVACY
-          </Link>
-          <Link
-            className="font-label-bold text-label-bold text-muted-gray hover:text-electric-purple transition-colors uppercase"
-            href="#"
-          >
-            TERMS
+            INSTAGRAM
           </Link>
         </div>
         <div className="font-label-bold text-label-bold text-muted-gray text-center md:text-right">

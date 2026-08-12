@@ -28,11 +28,15 @@ export default function HeroSection() {
       }
 
       // Fade up the paragraph and buttons
-      tl.from(
+      tl.fromTo(
         ".hero-fade-up",
         {
           y: 50,
           opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
           stagger: 0.2,
           duration: 1,
         },
