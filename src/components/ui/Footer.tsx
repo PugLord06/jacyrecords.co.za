@@ -44,8 +44,24 @@ export default function Footer() {
             INSTAGRAM
           </Link>
         </div>
-        <div className="font-label-bold text-label-bold text-muted-gray text-center md:text-right">
-          © {new Date().getFullYear()} JACY RECORDS. ALL RIGHTS RESERVED.
+        <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-right">
+          <div className="flex gap-4">
+            <Link
+              href="/privacy"
+              className="font-label-bold text-label-bold text-muted-gray hover:text-electric-purple transition-colors uppercase"
+            >
+              PRIVACY POLICY
+            </Link>
+            <Link
+              href="/terms"
+              className="font-label-bold text-label-bold text-muted-gray hover:text-electric-purple transition-colors uppercase"
+            >
+              TERMS & CONDITIONS
+            </Link>
+          </div>
+          <div className="font-label-bold text-label-bold text-muted-gray md:border-l border-outline-variant md:pl-4">
+            © {new Date().getFullYear()} JACY RECORDS. ALL RIGHTS RESERVED.
+          </div>
         </div>
       </div>
     </footer>
