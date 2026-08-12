@@ -28,11 +28,11 @@ export default function Template({ children }: { children: React.ReactNode }) {
   return (
     <div ref={container}>
       <div className="fixed inset-0 z-[9999] pointer-events-none flex">
-        <div className="page-transition-layer flex-1 bg-electric-purple scale-y-0 origin-bottom"></div>
-        <div className="page-transition-layer flex-1 bg-[#1A1A1A] scale-y-0 origin-bottom"></div>
-        <div className="page-transition-layer flex-1 bg-electric-purple scale-y-0 origin-bottom"></div>
-        <div className="page-transition-layer flex-1 bg-[#1A1A1A] scale-y-0 origin-bottom"></div>
-        <div className="page-transition-layer flex-1 bg-electric-purple scale-y-0 origin-bottom"></div>
+        <div className="page-transition-layer flex-1 bg-electric-purple origin-bottom" style={{ transform: "scaleY(1)" }}></div>
+        <div className="page-transition-layer flex-1 bg-[#1A1A1A] origin-bottom" style={{ transform: "scaleY(1)" }}></div>
+        <div className="page-transition-layer flex-1 bg-electric-purple origin-bottom" style={{ transform: "scaleY(1)" }}></div>
+        <div className="page-transition-layer flex-1 bg-[#1A1A1A] origin-bottom" style={{ transform: "scaleY(1)" }}></div>
+        <div className="page-transition-layer flex-1 bg-electric-purple origin-bottom" style={{ transform: "scaleY(1)" }}></div>
       </div>
       {children}
     </div>
